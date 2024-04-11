@@ -1,0 +1,12 @@
+Library/
+Temp/
+Assets/StreamingAssets/
+SwitchIL2CPPCache/
+obj/
+Logs/
+.vs/
+*.exr
+*.exr.meta
+*.csproj
+*.suo
+*.sln

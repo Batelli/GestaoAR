@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: P303
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 3
+  itemName: DESFIBRILADOR
+  itemDescription: "DESFIBRILADOR, TIPO EXTERNO AUTOM\xC1TICO, RECURSOS INTEGRADOS
+    MONITOR ECG, TIPO ONDA BIF\xC1SICA, TEMPO M\xC1XIMO CARGA AT\xC9 10 S, MEM\xD3RIA
+    GRAVA ECG,EVENTOS,SOM AMBIENTE, ALIMENTA\xC7\xC3O BATERIA L\xCDTIO, CAPACIDADE
+    BATERIA M\xCDNIMO DE 200 DESCARGAS, COMPONENTE P\xC1S ADESIVAS DESCART\xC1VEIS,
+    COMPONENTES ADICIONAIS TECLA C/ MENSAGEM DE TEXTO, CARACTER\xCDSTICAS ADICIONAIS
+    COMANDO DE VOZ, TIPO M\xD3DULO PORT\xC1TIL, C/ AL\xC7A TRANSPORTE, MALETA"
+  itemQuantity: 10
+  itemCost: 6100
+  isHospitalItem: 1
+  isSchoolItem: 0
+  isMuseumItem: 0
+  isCityHallItem: 0

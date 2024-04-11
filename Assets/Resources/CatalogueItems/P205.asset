@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: P205
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 2
+  itemName: "BEBEDOURO \xC1GUA GARRAF\xC3O"
+  itemDescription: "BEBEDOURO \xC1GUA GARRAF\xC3O, MATERIAL A\xC7O INOXID\xC1VEL,
+    TIPO EL\xC9TRICO DE COLUNA, CAPACIDADE 20 L, VOLTAGEM 110 V, CARACTER\xCDSTICAS
+    ADICIONAIS G\xC1S ECOL\xD3GICO/2 TORNEIRAS(\xC1GUA NATURAL/GELADA)SE R"
+  itemQuantity: 185
+  itemCost: 610
+  isHospitalItem: 1
+  isSchoolItem: 1
+  isMuseumItem: 1
+  isCityHallItem: 1

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: C1094
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 0
+  itemName: "OX\xCDMETRO USO M\xC9DICO"
+  itemDescription: "OX\xCDMETRO USO M\xC9DICO, TIPO DEDO, FAIXA MEDI\xC7\xC3O SATURA\xC7\xC3O
+    1 0 A 100%, FAIXA MEDI\xC7\xC3O PULSO 1 CERCA DE 20 A 250 BPM, AUTONOMIA SISTEMA
+    1 CERCA 24 H, ALIMENTA\xC7\xC3O PILHA, ACESS\xD3RIOS C/ SENSOR"
+  itemQuantity: 1
+  itemCost: 106.47
+  isHospitalItem: 1
+  isSchoolItem: 0
+  isMuseumItem: 0
+  isCityHallItem: 0

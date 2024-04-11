@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: P102
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 1
+  itemName: CADEIRA
+  itemDescription: "ITEM 01 CADEIRAS PARA COPA(CA1) - ESPECIFICA\xC7\xD5ES COMPLETAS
+    VIDE ITEM 2.1.1 DO ANEXO I - TERMO DE REFER\xCANCIA.RESUMO DAS ESPECIFICA\xC7\xD5ES:
+    CADEIRA FIXA COM ESTRUTURA EM A\xC7O CROMADO, APOIO DE BRA\xC7OS FIXO, ENCOSTO
+    E ASSENTO EM POLIPROPILENO NA COR BRANCA."
+  itemQuantity: 61
+  itemCost: 305
+  isHospitalItem: 1
+  isSchoolItem: 1
+  isMuseumItem: 1
+  isCityHallItem: 1

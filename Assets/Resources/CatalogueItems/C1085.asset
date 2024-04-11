@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: C1085
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 0
+  itemName: "ESCAL\xCDMETRO"
+  itemDescription: "ESCAL\xCDMETRO, MATERIAL PL\xC1STICO, TIPO ESCALA TRIPLO DEC\xCDMETRO,
+    TAMANHO 30 CM, ESCALA GRADUA\xC7\xC3O 1:20, 1:25, 1:50, 1:75, 1:100 E 1:125"
+  itemQuantity: 5
+  itemCost: 43.75
+  isHospitalItem: 0
+  isSchoolItem: 1
+  isMuseumItem: 0
+  isCityHallItem: 1

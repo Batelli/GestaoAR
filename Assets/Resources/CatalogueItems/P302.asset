@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: P302
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 3
+  itemName: "APARELHO RAIOS X M\xD3VEL"
+  itemDescription: "APARELHO RAIOS X, POT\xCANCIA APARELHO 50 A 125 KV, TIPO APARELHO
+    M\xD3VEL, C/ AMPOLAS DE RAIO X, APLICA\xC7\xC3O USO M\xC9DICO, TENS\xC3O ALIMENTA\xC7\xC3O
+    220 V, FREQU\xCANCIA 60 HZ, CARACTER\xCDSTICAS ADICIONAIS GERADOR ALTA FREQU\xCANCIA,
+    CONTROLE DE KV E MAS, AC I, ADICIONAIS C/DESCARGA TEMPO CAPACITOR,C/ 300 MAS"
+  itemQuantity: 3
+  itemCost: 15597
+  isHospitalItem: 1
+  isSchoolItem: 0
+  isMuseumItem: 0
+  isCityHallItem: 0

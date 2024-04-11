@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: C1019
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 0
+  itemName: SERINGA, MATERIAL VIDRO
+  itemDescription: "SERINGA, MATERIAL VIDRO, CAPACIDADE 10 ML, TIPO BICO BICO CENTRAL
+    LUER LOCK OUSLIP, ADICIONAL GRADUADA, NUMERADA, ESTERILIDADE ESTERILIZ\xC1VEL"
+  itemQuantity: 50
+  itemCost: 44.07
+  isHospitalItem: 1
+  isSchoolItem: 0
+  isMuseumItem: 0
+  isCityHallItem: 0

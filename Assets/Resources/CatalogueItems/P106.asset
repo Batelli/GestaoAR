@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a589d6d2317b0dc46a2161000561aca9, type: 3}
+  m_Name: P106
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
+  itemCaseType: 1
+  itemName: "MACA CL\xCDNICA"
+  itemDescription: "MACA CL\xCDNICA, MATERIAL A\xC7O INOXID\xC1VEL, ACABAMENTO DA
+    SUPERF\xCDCIE ESMALTADO, RODAS SEM ROD\xCDZIOS, P\xC9S FIXO, COMPRIMENTO AT\xC9
+    2,00 M, LARGURA CERCA DE 0,90 M, ALTURA CERCA DE 1,00 M, CAPACIDADE DE CARGA
+    AT\xC9 250 KG, COMPONENTES C/ SUPORTE PARA LEN\xC7OL DESCART\xC1VEL, CARACTER\xCDSTICAS
+    ADICIONAIS CABECEIRA REGUL\xC1VEL POR CREMALHEIRA, ACESS\xD3RIOS LEITO FIXO C/
+    COLCH\xC3O, COURVIN"
+  itemQuantity: 10
+  itemCost: 580
+  isHospitalItem: 1
+  isSchoolItem: 0
+  isMuseumItem: 0
+  isCityHallItem: 0
