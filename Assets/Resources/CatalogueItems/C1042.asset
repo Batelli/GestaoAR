@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: "BARBANTE ALGOD\xC3O"
   itemDescription: "BARBANTE ALGOD\xC3O"
   itemQuantity: 178
+  itemMeasureType: 21
   itemCost: 4.8
   isHospitalItem: 1
   isSchoolItem: 1

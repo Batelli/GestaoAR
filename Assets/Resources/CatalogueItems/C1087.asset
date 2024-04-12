@@ -19,6 +19,7 @@ MonoBehaviour:
     GRAMATURA 60 G/M2, LARGURA 450 MM, ACABAMENTO SUPERFICIAL BRILHANTE, COMPRIMENTO
     FOLHA 2.500 MM, TRANSMIT\xC2NCIA TRANSPARENTE"
   itemQuantity: 56
+  itemMeasureType: 19
   itemCost: 60.34
   isHospitalItem: 1
   isSchoolItem: 1

@@ -21,6 +21,7 @@ MonoBehaviour:
     cor branca; Mensagens no \u201Cdisplay\u201D em portugu\xEAs; Selo do Inmetro;
     Classifica\xE7\xE3o de energia econ\xF4mica; Voltagem: 110V."
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 471.07
   isHospitalItem: 1
   isSchoolItem: 1

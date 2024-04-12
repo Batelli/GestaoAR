@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: AVENTAL HOSPITALAR
   itemDescription: UNIFORMES, TECIDOS E AVIAMENTOS
   itemQuantity: 7000
+  itemMeasureType: 0
   itemCost: 18.19
   isHospitalItem: 1
   isSchoolItem: 0

@@ -22,6 +22,7 @@ MonoBehaviour:
     COM CINTA DE 6 METROS.PRESEN\xC7A DE ROLETES FACILITADORES COLOCA\xC7\xC3O DO
     BARCO.PARA-CHOQUE EXPANS\xCDVEL/REMOV\xCDV EL C/ ILUMINA\xC7\xC3O."
   itemQuantity: 1
+  itemMeasureType: 0
   itemCost: 6500
   isHospitalItem: 0
   isSchoolItem: 0

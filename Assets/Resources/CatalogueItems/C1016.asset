@@ -19,6 +19,7 @@ MonoBehaviour:
     OU ADESIVOS, ACONDICIONADOS PARA VENDA A RETALHO COMO COLAS OU ADESIVOS, COM
     PESO L\xCDQUIDO N\xC3O SUPERIOR A 1 KG"
   itemQuantity: 30
+  itemMeasureType: 0
   itemCost: 2.5
   isHospitalItem: 1
   isSchoolItem: 1

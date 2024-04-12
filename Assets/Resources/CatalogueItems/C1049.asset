@@ -20,6 +20,7 @@ MonoBehaviour:
     COR TINTA PRETA, CARACTER\xCDSTICAS ADICIONAIS MATERIAL TRANSPARENTE E COM ORIF\xCDCIO
     LATERAL"
   itemQuantity: 3766
+  itemMeasureType: 0
   itemCost: 0.45
   isHospitalItem: 1
   isSchoolItem: 1

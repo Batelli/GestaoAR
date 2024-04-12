@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "MOLAS PARA PAP\xC9IS, OUTROS OBJETOS DE ESCRIT\xD3RIO, DE METAIS
     COMUNS"
   itemQuantity: 50
+  itemMeasureType: 0
   itemCost: 1.9
   isHospitalItem: 1
   isSchoolItem: 1

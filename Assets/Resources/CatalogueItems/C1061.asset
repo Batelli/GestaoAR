@@ -20,6 +20,7 @@ MonoBehaviour:
     COM FOLHAS PAUTADAS E NUMERADAS SEQ\xDCENCIALMENTE, MATERIAL CAPA PAPEL\xC3O,
     GRAMATURA FOLHAS 54 G/M2"
   itemQuantity: 115
+  itemMeasureType: 0
   itemCost: 11.11
   isHospitalItem: 1
   isSchoolItem: 1

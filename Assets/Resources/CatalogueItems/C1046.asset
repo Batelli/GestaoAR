@@ -19,6 +19,7 @@ MonoBehaviour:
     MM, LARGURA 18 MM, ALTURA 6 MM, COR AZUL E VERMELHA, APLICA\xC7\xC3O PARA L\xC1PIS
     E TINTA"
   itemQuantity: 54
+  itemMeasureType: 0
   itemCost: 12.96
   isHospitalItem: 1
   isSchoolItem: 1

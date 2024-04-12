@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "CLIPE USO CIR\xDARGICO, MAT\xC9RIA PRIMA TIT\xC2NIO, APLICA\xC7\xC3O*
     HEMOST\xC1TICO, TAMANHO* M\xC9DIO- LARGO, ESTERILIDADE* EST\xC9RIL, DESCART\xC1VEL"
   itemQuantity: 170
+  itemMeasureType: 0
   itemCost: 99.23
   isHospitalItem: 1
   isSchoolItem: 0

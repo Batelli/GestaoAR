@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: QUADRO BRANCO 450CM X 120CM
   itemDescription: QUADRO BRANCO QUADRICULADO MEDINDO 450 CM X 120 CM
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 1615.02
   isHospitalItem: 1
   isSchoolItem: 1

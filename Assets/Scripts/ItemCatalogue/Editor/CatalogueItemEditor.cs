@@ -29,6 +29,7 @@ public class CatalogueItemEditor : Editor
         catalogueItem.itemName = (string)EditorGUILayout.TextField("Item", catalogueItem.itemName);
         catalogueItem.itemDescription = (string)EditorGUILayout.TextField("Description", catalogueItem.itemDescription);
         catalogueItem.itemQuantity = EditorGUILayout.IntField("Quantity", catalogueItem.itemQuantity);
+        catalogueItem.itemMeasureType = (MeasureType)EditorGUILayout.EnumPopup("Measure Type", catalogueItem.itemMeasureType);
         catalogueItem.itemCost = EditorGUILayout.FloatField("Cost", catalogueItem.itemCost);
         
         EditorGUILayout.EndVertical();

@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "ADO\xC7ANTE, ASPECTO F\xCDSICO L\xCDQUIDO, INGREDIENTES EST\xC9VIA,
     TIPO DIET\xC9TICO MARCA: STEVITA ITEM DO PROCESSO: 00004 ITEM DE MATERIAL: 000236197"
   itemQuantity: 25000
+  itemMeasureType: 0
   itemCost: 0.02
   isHospitalItem: 1
   isSchoolItem: 1

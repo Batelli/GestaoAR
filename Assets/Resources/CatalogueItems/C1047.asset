@@ -19,6 +19,7 @@ MonoBehaviour:
     APRESENTA\xC7\xC3O BROCHURA, QUANTIDADE FOLHAS 96 FL, COMPRIMENTO 210 MM, LARGURA
     150 MM"
   itemQuantity: 150
+  itemMeasureType: 0
   itemCost: 4.08
   isHospitalItem: 1
   isSchoolItem: 1

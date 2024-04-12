@@ -20,6 +20,7 @@ MonoBehaviour:
     COR TINTA VERMELHA, CARACTER\xCDSTICAS ADICIONAIS MATERIAL TRANSPARENTE E COM
     ORIF\xCDCIO LATERAL"
   itemQuantity: 2275
+  itemMeasureType: 0
   itemCost: 0.48
   isHospitalItem: 1
   isSchoolItem: 0

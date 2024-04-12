@@ -19,6 +19,7 @@ MonoBehaviour:
     COMPRIMENTO 40 M, APLICA\xC7\xC3O IMPRESSORA GERENCIADORA DE FILA, CARACTER\xCDSTICAS
     ADICIONAIS DI\xC2METRO 60MM E TUBETE 12MM"
   itemQuantity: 24
+  itemMeasureType: 0
   itemCost: 3.39
   isHospitalItem: 1
   isSchoolItem: 1

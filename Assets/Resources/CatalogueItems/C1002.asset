@@ -19,6 +19,7 @@ MonoBehaviour:
     G, CARACTER\xCDSTICAS ADICIONAIS COM TAMPA, COM P\xC1 PARA A\xC7\xDACAR, FORMATO
     OVALOBSERVA\xC7\xD5ES COMPLEMENTARES."
   itemQuantity: 30
+  itemMeasureType: 0
   itemCost: 55.71
   isHospitalItem: 1
   isSchoolItem: 1

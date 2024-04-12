@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "BLOCO RECADO, MATERIAL PAPEL, COR AMARELO, LARGURA 38 MM, COMPRIMENTO
     50 MM, TIPO REMOV\xCDVEL, CARACTER\xCDSTICAS ADICIONAIS AUTO-ADESIVO"
   itemQuantity: 750
+  itemMeasureType: 22
   itemCost: 2.5
   isHospitalItem: 1
   isSchoolItem: 1

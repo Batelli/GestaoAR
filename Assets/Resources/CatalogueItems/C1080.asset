@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: ENVELOPE, MATERIAL PAPEL KRAFT, GRAMATURA 80 G/M2, TIPO SACO COMUM,
     COMPRIMENTO 340 MM, COR PARDA, LARGURA 240 MM
   itemQuantity: 336
+  itemMeasureType: 9
   itemCost: 52.04
   isHospitalItem: 1
   isSchoolItem: 1

@@ -19,6 +19,7 @@ MonoBehaviour:
     MATERIAL CARGA MASSA, TAMANHO 12, VALIDADE CARGA 1 ANO, CARACTER\xCDSTICAS ADICIONAIS
     CONT\xC9M GLICERINA E N\xC3O MANCHA"
   itemQuantity: 112
+  itemMeasureType: 0
   itemCost: 1.8
   isHospitalItem: 1
   isSchoolItem: 1

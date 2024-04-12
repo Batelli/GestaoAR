@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "CAF\xC9, APRESENTA\xC7\xC3O TORRADO MO\xCDDO, INTENSIDADE SUAVE,
     TIPO TRADICIONAL, EMPACOTAMENTO V\xC1CUO"
   itemQuantity: 2040
+  itemMeasureType: 3
   itemCost: 14.79
   isHospitalItem: 1
   isSchoolItem: 1

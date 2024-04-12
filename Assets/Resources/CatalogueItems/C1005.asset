@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "\xC1GUA MINERAL NATURAL, TIPO SEM G\xC1S, MATERIAL EMBALAGEM
     PL\xC1STICO, TIPO EMBALAGEM RETORN\xC1VEL"
   itemQuantity: 3552
+  itemMeasureType: 12
   itemCost: 8.99
   isHospitalItem: 1
   isSchoolItem: 1

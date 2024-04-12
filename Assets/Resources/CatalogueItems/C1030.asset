@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "SABONETE L\xCDQUIDO, ASPECTO F\xCDSICO L\xCDQUIDO CREMOSO PEROLADO,
     COR BRANCA, ACIDEZ NEUTRO PH, APLICA\xC7\xC3O COMERCIAL"
   itemQuantity: 582
+  itemMeasureType: 14
   itemCost: 7
   isHospitalItem: 1
   isSchoolItem: 1

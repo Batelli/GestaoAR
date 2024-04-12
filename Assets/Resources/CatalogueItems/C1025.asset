@@ -21,6 +21,7 @@ MonoBehaviour:
     TIPO AMBIDESTRA, TIPO USO DESCART\xC1VEL, MODELO FORMATO ANAT\xD4MICO, FINALIDADE
     RESISTENTE \xC0 TRA\xC7\xC3O"
   itemQuantity: 626
+  itemMeasureType: 7
   itemCost: 39.3
   isHospitalItem: 1
   isSchoolItem: 0

@@ -19,6 +19,7 @@ MonoBehaviour:
     FORMATO CORPO CIL\xCDNDRICO, DI\xC2METRO CORPO 8 MM, COMPRIMENTO TOTAL 175 MM,
     APLICA\xC7\xC3O TINTA/ GRAFITE"
   itemQuantity: 30
+  itemMeasureType: 0
   itemCost: 2.06
   isHospitalItem: 1
   isSchoolItem: 1

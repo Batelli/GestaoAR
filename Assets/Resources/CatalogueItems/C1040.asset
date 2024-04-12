@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "APONTADOR L\xC1PIS, MATERIAL METAL E PL\xC1STICO, TIPO ESCOLAR,
     CARACTER\xCDSTICAS ADICIONAIS COM DEP\xD3SITO"
   itemQuantity: 427
+  itemMeasureType: 0
   itemCost: 0.87
   isHospitalItem: 1
   isSchoolItem: 1

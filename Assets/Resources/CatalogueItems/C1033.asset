@@ -19,6 +19,7 @@ MonoBehaviour:
     USO DESCART\xC1VEL, CARACTER\xCDSTICAS ADICIONAIS EST\xC9RIL, EMBALAGEM INDIVIDUAL,
     TIPO COM SISTEMA RETR\xC1TIL"
   itemQuantity: 1
+  itemMeasureType: 8
   itemCost: 9.56
   isHospitalItem: 1
   isSchoolItem: 0

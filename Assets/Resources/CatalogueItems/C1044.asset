@@ -19,6 +19,7 @@ MonoBehaviour:
     76 MM, CARACTER\xCDSTICAS ADICIONAIS AUTO-ADESIVO, POST IT, QUANTIDADE FOLHAS
     100 UN"
   itemQuantity: 595
+  itemMeasureType: 22
   itemCost: 1.8
   isHospitalItem: 1
   isSchoolItem: 1

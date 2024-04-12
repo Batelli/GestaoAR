@@ -20,6 +20,7 @@ MonoBehaviour:
     SEM FUROS, TIPO SACO, APLICA\xC7\xC3O ACONDICIONAMENTO DE DOCUMENTOS, GRAMATURA
     80 G/M2"
   itemQuantity: 371
+  itemMeasureType: 7
   itemCost: 31.66
   isHospitalItem: 1
   isSchoolItem: 1

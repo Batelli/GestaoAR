@@ -19,6 +19,7 @@ MonoBehaviour:
     X 2,60 X 0,5 CM, COR SORTIDA, APLICA\xC7\xC3O IDENTIFICA\xC7\xC3O CHAVES, CARACTER\xCDSTICAS
     ADICIONAIS TIPO CAIXA, ETIQUETA INTERNA DE PAPEL"
   itemQuantity: 670
+  itemMeasureType: 0
   itemCost: 0.92
   isHospitalItem: 1
   isSchoolItem: 1

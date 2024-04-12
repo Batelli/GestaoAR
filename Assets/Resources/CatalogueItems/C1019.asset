@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "SERINGA, MATERIAL VIDRO, CAPACIDADE 10 ML, TIPO BICO BICO CENTRAL
     LUER LOCK OUSLIP, ADICIONAL GRADUADA, NUMERADA, ESTERILIDADE ESTERILIZ\xC1VEL"
   itemQuantity: 50
+  itemMeasureType: 0
   itemCost: 44.07
   isHospitalItem: 1
   isSchoolItem: 0

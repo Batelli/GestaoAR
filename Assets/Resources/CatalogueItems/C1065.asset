@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "TELA DE PINTURA, MATERIAL TECIDO, COR BRANCA, COMPRIMENTO 60
     CM, LARGURA 45 CM , USO ART\xCDSTICO"
   itemQuantity: 60
+  itemMeasureType: 0
   itemCost: 28.35
   isHospitalItem: 0
   isSchoolItem: 1

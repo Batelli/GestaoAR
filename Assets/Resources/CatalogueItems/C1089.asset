@@ -19,6 +19,7 @@ MonoBehaviour:
     PART\xCDCULAS METALIZADAS, COR SORTIDA, APLICA\xC7\xC3O DECORA\xC7\xC3O/ROUPA/ARTESANATO/FANTASIA/FLOR
     E ISOPOR"
   itemQuantity: 50
+  itemMeasureType: 4
   itemCost: 10.33
   isHospitalItem: 0
   isSchoolItem: 1

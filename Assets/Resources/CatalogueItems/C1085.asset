@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "ESCAL\xCDMETRO, MATERIAL PL\xC1STICO, TIPO ESCALA TRIPLO DEC\xCDMETRO,
     TAMANHO 30 CM, ESCALA GRADUA\xC7\xC3O 1:20, 1:25, 1:50, 1:75, 1:100 E 1:125"
   itemQuantity: 5
+  itemMeasureType: 0
   itemCost: 43.75
   isHospitalItem: 0
   isSchoolItem: 1

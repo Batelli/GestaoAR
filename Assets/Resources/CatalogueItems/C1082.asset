@@ -19,6 +19,7 @@ MonoBehaviour:
     COMUM, COMPRIMENTO 360 MM, COR PARDA, IMPRESS\xC3O BAIXO-RELEVO, LARGURA 260
     MM"
   itemQuantity: 52
+  itemMeasureType: 9
   itemCost: 68.54
   isHospitalItem: 1
   isSchoolItem: 1

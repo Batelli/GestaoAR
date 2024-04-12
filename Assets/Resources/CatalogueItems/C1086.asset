@@ -19,6 +19,7 @@ MonoBehaviour:
     COMPRIMENTO 170 MM, TIPO AUTO-ADESIVA, CARACTER\xCDSTICAS ADICIONAIS FOLHA A4
     C/ 4 ETIQUETAS"
   itemQuantity: 13
+  itemMeasureType: 11
   itemCost: 18.98
   isHospitalItem: 1
   isSchoolItem: 1

@@ -19,6 +19,7 @@ MonoBehaviour:
     ALMOFADA ESPONJA ABSORVENTE REVESTIDA DE TECIDO, TAMANHO GRANDE, COR AZUL, TIPO
     ENTINTADA"
   itemQuantity: 165
+  itemMeasureType: 0
   itemCost: 5.11
   isHospitalItem: 1
   isSchoolItem: 1

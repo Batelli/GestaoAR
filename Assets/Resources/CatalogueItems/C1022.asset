@@ -19,6 +19,7 @@ MonoBehaviour:
     LARGURA 10 CM, COMPRIMENTO 300 CM, CARACTER\xCDSTICAS ADICIONAIS IMPREGNADA C/GESSO
     COLOIDAL, SECAGEM ULTRA R\xC1PIDA"
   itemQuantity: 80
+  itemMeasureType: 0
   itemCost: 135.2
   isHospitalItem: 1
   isSchoolItem: 0

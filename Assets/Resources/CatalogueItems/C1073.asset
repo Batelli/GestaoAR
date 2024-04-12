@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "COLA, COR BRANCA, APLICA\xC7\xC3O PAPEL, CARACTER\xCDSTICAS ADICIONAIS
     INSTANT\xC2NEA, TIPO L\xCDQUIDO"
   itemQuantity: 925
+  itemMeasureType: 0
   itemCost: 1.25
   isHospitalItem: 1
   isSchoolItem: 1

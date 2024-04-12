@@ -19,6 +19,7 @@ MonoBehaviour:
     M\xCDNIMO 10 VEZES, DI\xC2METRO 6 CM, MATERIAL CABO METAL, CARACTER\xCDSTICAS
     ADICIONAIS REGUL\xC1VEL E ARTICULADO, DE MESA"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 232
   isHospitalItem: 0
   isSchoolItem: 0

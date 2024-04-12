@@ -19,6 +19,7 @@ MonoBehaviour:
     TOTAL 13 L, ACESS\xD3RIOS AL\xC7AS R\xCDGIDAS E TAMPA, COMPONENTES ADICIONAIS
     REVESTIMENTO INTERNO EM POLIETILENO ALTA DENSIDAD E, TIPO USO DESCART\xC1VEL"
   itemQuantity: 1200
+  itemMeasureType: 0
   itemCost: 770
   isHospitalItem: 1
   isSchoolItem: 0

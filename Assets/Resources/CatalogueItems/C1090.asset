@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: GRAFITE, 0,50 MM
   itemDescription: "GRAFITE, DI\xC2METRO 0,50 MM"
   itemQuantity: 102
+  itemMeasureType: 25
   itemCost: 2.45
   isHospitalItem: 1
   isSchoolItem: 1

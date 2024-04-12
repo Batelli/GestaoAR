@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: AGENDA
   itemDescription: AGENDA
   itemQuantity: 2
+  itemMeasureType: 0
   itemCost: 22.49
   isHospitalItem: 1
   isSchoolItem: 1

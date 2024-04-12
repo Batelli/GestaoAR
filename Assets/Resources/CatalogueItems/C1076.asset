@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "COLCHETE FIXA\xC7\xC3O, MATERIAL A\xC7O, TRATAMENTO SUPERFICIAL
     LATONADO, TAMANHO N\xBA 6"
   itemQuantity: 9
+  itemMeasureType: 6
   itemCost: 3.73
   isHospitalItem: 1
   isSchoolItem: 1

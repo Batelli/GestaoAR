@@ -19,6 +19,7 @@ MonoBehaviour:
     MATERIAL CABE\xC7A PL\xC1STICO, FORMATO CABE\xC7A REDONDO, COR AZUL, COMPRIMENTO
     15 MM, APLICA\xC7\xC3O MAPA"
   itemQuantity: 4
+  itemMeasureType: 5
   itemCost: 3.03
   isHospitalItem: 1
   isSchoolItem: 1

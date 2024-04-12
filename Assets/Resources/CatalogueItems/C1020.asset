@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "FRASCO 10,00 ML CLORETO DE S\xD3DIO, CONCENTRA\xC7AO 0,9 , FORMA
     FARMACEUTICA SOLU\xC7\xC3O EST\xC9RIL N\xC3O INJET\xC1VEL"
   itemQuantity: 100
+  itemMeasureType: 0
   itemCost: 1
   isHospitalItem: 1
   isSchoolItem: 0

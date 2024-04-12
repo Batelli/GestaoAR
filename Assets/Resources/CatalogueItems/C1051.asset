@@ -19,6 +19,7 @@ MonoBehaviour:
     FELTRO, APLICA\xC7\xC3O PAPEL, CARACTER\xCDSTICAS ADICIONAIS JUMBO 12 CORES E
     ESTOJO COM ZIP."
   itemQuantity: 100
+  itemMeasureType: 4
   itemCost: 6.36
   isHospitalItem: 1
   isSchoolItem: 1

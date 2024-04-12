@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "CANETA ROMA EM PL\xC1STICO, ESFEROGR\xC1FICA, COM ARTE, CONFORME
     SOLICITANTE."
   itemQuantity: 225
+  itemMeasureType: 0
   itemCost: 5
   isHospitalItem: 1
   isSchoolItem: 1

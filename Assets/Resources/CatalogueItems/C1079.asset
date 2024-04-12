@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "CINTA EL\xC1STICA, MATERIAL BORRACHA, FORMA CIRCULAR, COR NATURAL,
     APLICA\xC7\xC3O ORGANIZA\xC7\xC3O MATERIAL EXPEDIENTE"
   itemQuantity: 70
+  itemMeasureType: 1
   itemCost: 1.87
   isHospitalItem: 1
   isSchoolItem: 1

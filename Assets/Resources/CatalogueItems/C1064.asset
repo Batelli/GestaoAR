@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "PUN\xC7\xC3O - ESCRITA BRAILE, MATERIAL CABO PL\xC1STICO, MATERIAL
     PONTEIRA A\xC7O, FORMATO ESF\xC9RICO, DI\xC2METRO 25 MM"
   itemQuantity: 3
+  itemMeasureType: 0
   itemCost: 11.98
   isHospitalItem: 0
   isSchoolItem: 1

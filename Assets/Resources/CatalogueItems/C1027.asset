@@ -19,6 +19,7 @@ MonoBehaviour:
     HORIZONTAIS, AT\xD3XICA, TIPO FIXA\xC7\xC3O COM EL\xC1STICO, CARACTER\xCDSTICAS
     ADICIONAIS CLIP NASAL EMBUTIDO,HIPOALERG\xCANICA, TIPO USO DESCART\xC1VEL"
   itemQuantity: 500
+  itemMeasureType: 0
   itemCost: 158.9
   isHospitalItem: 1
   isSchoolItem: 0

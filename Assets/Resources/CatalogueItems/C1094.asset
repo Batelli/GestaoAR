@@ -19,6 +19,7 @@ MonoBehaviour:
     1 0 A 100%, FAIXA MEDI\xC7\xC3O PULSO 1 CERCA DE 20 A 250 BPM, AUTONOMIA SISTEMA
     1 CERCA 24 H, ALIMENTA\xC7\xC3O PILHA, ACESS\xD3RIOS C/ SENSOR"
   itemQuantity: 1
+  itemMeasureType: 0
   itemCost: 106.47
   isHospitalItem: 1
   isSchoolItem: 0

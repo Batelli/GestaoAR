@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "CAF\xC9, APRESENTA\xC7\xC3O TORRADO EM GR\xC3O, INTENSIDADE M\xC9DIA,
     TIPO TRADICIONAL"
   itemQuantity: 16
+  itemMeasureType: 3
   itemCost: 58.98
   isHospitalItem: 1
   isSchoolItem: 1

@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: PRANCHETA ACRILICO GARRA METAL
   itemDescription: "OUTRAS OBRAS DE PL\xC1STICOS"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 13.3
   isHospitalItem: 1
   isSchoolItem: 1

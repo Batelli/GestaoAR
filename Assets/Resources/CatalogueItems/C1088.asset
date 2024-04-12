@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "R\xC9GUA GABARITO, MATERIAL ACR\xCDLICO, APLICA\xC7\xC3O DIAGRAMA\xC7\xC3O,
     COR INCOLOR"
   itemQuantity: 5
+  itemMeasureType: 0
   itemCost: 48
   isHospitalItem: 0
   isSchoolItem: 1

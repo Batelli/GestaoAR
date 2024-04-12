@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: BORRACHA BRANCA
   itemDescription: BORRACHA BRANCA 20 CX/20 UND LEOELEO
   itemQuantity: 50
+  itemMeasureType: 0
   itemCost: 0.86
   isHospitalItem: 1
   isSchoolItem: 1

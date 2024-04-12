@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "ENVELOPE PL\xC1STICO, COMPRIMENTO 32 CM, LARGURA 24 CM, CARACTER\xCDSTICAS
     ADICIONAIS COM 4 FUROS, APLICA\xC7\xC3O PASTA CAT\xC1LOGO, MATERIAL PL\xC1STICO"
   itemQuantity: 192
+  itemMeasureType: 7
   itemCost: 18.39
   isHospitalItem: 1
   isSchoolItem: 1

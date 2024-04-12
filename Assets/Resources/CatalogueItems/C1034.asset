@@ -19,6 +19,7 @@ MonoBehaviour:
     4,5 cm de largura, cor dourada com fundo em MDF, pendurador tri\xE2ngulo horizontal,
     prendedores flex point, vidro antireflexo, tamanho 21 x 30 cm"
   itemQuantity: 440
+  itemMeasureType: 0
   itemCost: 28
   isHospitalItem: 1
   isSchoolItem: 0

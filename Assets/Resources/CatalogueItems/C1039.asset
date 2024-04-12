@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "APAGADOR QUADRO BRANCO, MATERIAL BASE FELTRO, MATERIAL CORPO
     PL\xC1STICO, COMPRIMENTO 15 CM, LARGURA 6 CM, ALTURA 5 CM"
   itemQuantity: 650
+  itemMeasureType: 0
   itemCost: 3.88
   isHospitalItem: 1
   isSchoolItem: 1

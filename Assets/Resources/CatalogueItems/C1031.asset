@@ -19,6 +19,7 @@ MonoBehaviour:
     COMPONENTES ADESIVO \xC0 BASE DE ZINCO, DIMENS\xD5ES CERCA DE 10 CM, CARACTER\xCDSTICAS
     ADICIONAIS HIPOALERG\xCANICO, COR COM COR"
   itemQuantity: 10
+  itemMeasureType: 17
   itemCost: 5.85
   isHospitalItem: 1
   isSchoolItem: 0

@@ -19,6 +19,7 @@ MonoBehaviour:
     EM N\xC3O TECIDO, COMPONENTES ADESIVO ACR\xCDLICO, DIMENS\xD5ES CERCA DE 25 MM,
     CARACTER\xCDSTICAS ADICIONAIS HIPOALERG\xCANICO, COR COM COR"
   itemQuantity: 20
+  itemMeasureType: 0
   itemCost: 7
   isHospitalItem: 1
   isSchoolItem: 0

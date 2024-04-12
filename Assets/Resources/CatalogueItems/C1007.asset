@@ -19,6 +19,7 @@ MonoBehaviour:
     APLICA\xC7\xC3O L\xCDQUIDOS FRIOS E QUENTES, CARACTER\xCDSTICAS ADICIONAIS AT\xD3XICO,
     DE ACORDO C/ NORMA ABNT, NBR 14865, COR BRANCO"
   itemQuantity: 442
+  itemMeasureType: 10
   itemCost: 6.07
   isHospitalItem: 1
   isSchoolItem: 1

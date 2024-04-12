@@ -15,8 +15,9 @@ MonoBehaviour:
   itemSprite: {fileID: 0}
   itemCaseType: 0
   itemName: TOALHA DE PAPEL
-  itemDescription: TOALHA DE PAPEL, TOALHA PAPEL - MAO
+  itemDescription: ROLO DE TOALHA PAPEL - MAO
   itemQuantity: 723
+  itemMeasureType: 0
   itemCost: 5
   isHospitalItem: 1
   isSchoolItem: 1

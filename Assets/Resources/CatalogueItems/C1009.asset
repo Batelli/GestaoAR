@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "COADOR DESCART\xC1VEL CAF\xC9, MATERIAL PAPEL, TAMANHO 102 MARCA:
     MALU ITEM DO PROCESSO: 00019 ITEM DE MATERIAL: 000237589"
   itemQuantity: 48
+  itemMeasureType: 0
   itemCost: 2.47
   isHospitalItem: 1
   isSchoolItem: 1

@@ -20,6 +20,7 @@ MonoBehaviour:
     CARACTER\xCDSTICAS ADICIONAIS CLASSE PFF2(POEIRAS, FUMOS, N\xC9VOAS T\xD3XICAS),
     FORMATO EM CONCHA, DUPLA CAMADA"
   itemQuantity: 1000
+  itemMeasureType: 0
   itemCost: 24.85
   isHospitalItem: 1
   isSchoolItem: 0

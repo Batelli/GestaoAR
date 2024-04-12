@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: CANETAS E MARCADORES, COM PONTA DE FELTRO OU COM OUTRAS PONTAS
     POROSAS
   itemQuantity: 50
+  itemMeasureType: 0
   itemCost: 1
   isHospitalItem: 1
   isSchoolItem: 1

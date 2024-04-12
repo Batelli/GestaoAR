@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: CAIXA ARQUIVO MORTO DELLO
   itemDescription: "OUTROS ARTIGOS SEMELHANTES A CAIXAS, ENGRADADOS, ETC, DE PL\xC1STICO"
   itemQuantity: 100
+  itemMeasureType: 0
   itemCost: 6.78
   isHospitalItem: 1
   isSchoolItem: 1
