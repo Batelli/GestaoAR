@@ -17,6 +17,9 @@ public class DeliveryBox : MonoBehaviour
     public TMP_Text unitQttNumber;
     public TMP_Text unitCostNumber;
     public TMP_Text totalCostNumber;
+    public TMP_Text deliveryDate;
+    public TMP_Text shoppingDate;
+    public TMP_Text measureType;
 
     public TMP_Text boxNFNumber;
     public TMP_Text boxObjectName;
@@ -40,10 +43,13 @@ public class DeliveryBox : MonoBehaviour
         unitQttNumber.text = DeliveryInformationTranslator.Instance.GetUnitQtt(codeToTranslate);
         unitCostNumber.text = DeliveryInformationTranslator.Instance.GetUnitCost(codeToTranslate);
         totalCostNumber.text = DeliveryInformationTranslator.Instance.GetTotalCost(codeToTranslate);
+        deliveryDate.text = DeliveryInformationTranslator.Instance.GetDeliveryDate(codeToTranslate);
+        shoppingDate.text = DeliveryInformationTranslator.Instance.GetCurrentDate();
+        measureType.text = DeliveryInformationTranslator.Instance.GetMeasureType(codeToTranslate);
 
         boxNFNumber.text = nfNumber.text;
         boxObjectName.text = objectName.text;
-        boxQtt.text = unitQttNumber.text;
+        boxQtt.text = unitQttNumber.text + " X";
 
     bool damagedBox = DeliveryInformationTranslator.Instance.GetDamagedBox(codeToTranslate);
         oldBox.SetActive(damagedBox);
