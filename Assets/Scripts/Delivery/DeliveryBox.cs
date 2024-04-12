@@ -24,6 +24,7 @@ public class DeliveryBox : MonoBehaviour
     public TMP_Text boxNFNumber;
     public TMP_Text boxObjectName;
     public TMP_Text boxQtt;
+    public GameObject[] boxBuildingIcon;
 
 
 
@@ -49,9 +50,11 @@ public class DeliveryBox : MonoBehaviour
 
         boxNFNumber.text = nfNumber.text;
         boxObjectName.text = objectName.text;
-        boxQtt.text = unitQttNumber.text + " X";
+        boxQtt.text = unitQttNumber.text + "X";
 
-    bool damagedBox = DeliveryInformationTranslator.Instance.GetDamagedBox(codeToTranslate);
+        boxBuildingIcon[(int)DeliveryInformationTranslator.Instance.GetBuildingType(codeToTranslate)].SetActive(true);
+
+        bool damagedBox = DeliveryInformationTranslator.Instance.GetDamagedBox(codeToTranslate);
         oldBox.SetActive(damagedBox);
         newBox.SetActive(!damagedBox);
     }

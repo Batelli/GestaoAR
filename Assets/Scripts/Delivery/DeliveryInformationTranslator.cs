@@ -807,13 +807,13 @@ public class DeliveryInformationTranslator : MonoBehaviour
     {
         ErrorType error = GetErrorType(keyCode);
         System.DateTime dateTime = System.DateTime.Now;
-        dateTime.AddDays(Random.Range(5, 15)); //entrega de 5 a 15 dias
+        dateTime = dateTime.AddDays(Random.Range(5, 15)); //entrega de 5 a 15 dias
 
         if (error != ErrorType.DeliveryDate)
             return dateTime.ToString("dd/MM/yyyy");
 
 
-        dateTime.AddDays(Random.Range(25, 45)); //entrega acima de 30 dias
+        dateTime = dateTime.AddDays(Random.Range(25, 45)); //entrega acima de 30 dias
         return dateTime.ToString("dd/MM/yyyy");
     }
 
@@ -825,7 +825,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
     public string GetDeliveryDeadline(string keyCode)
     {
         System.DateTime dateTime = System.DateTime.Now;
-        dateTime.AddDays(20);
+        dateTime = dateTime.AddDays(20);
         return dateTime.ToString("dd/MM/yyyy");
     }
     #endregion Decode
