@@ -222,5 +222,37 @@ public class AudinQuestionTranslator : MonoBehaviour
         return 0;
     }
 
+    public string GetAnswerText(int index, AUDIN_Subject subject)
+    {
+        if (subject == AUDIN_Subject.None || index < 0 || index >= GetQuestionLength(subject))
+            return "";
+
+        switch (subject)
+        {
+            case AUDIN_Subject.Recebimento:
+                return recebimentoQuestions.answers[index];
+            case AUDIN_Subject.None:
+                return "";
+            default:
+                return "";
+        }
+    }
+
+    public bool GetAnswerKey(int index, AUDIN_Subject subject)
+    {
+        if (subject == AUDIN_Subject.None || index < 0 || index >= GetQuestionLength(subject))
+            return false;
+
+        switch (subject)
+        {
+            case AUDIN_Subject.Recebimento:
+                return recebimentoQuestions.answersKeys[index];
+            case AUDIN_Subject.None:
+                return false;
+            default:
+                return false;
+        }
+    }
+
     #endregion Decode
 }
