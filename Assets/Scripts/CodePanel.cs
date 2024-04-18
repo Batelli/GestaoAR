@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DeliveryCodePanel : MonoBehaviour
+public enum CaseSelection { None, Recebimento, Audin }
+
+
+public class CodePanel : MonoBehaviour
 {
     string gameDeliveryCode = "";
 
@@ -12,6 +15,8 @@ public class DeliveryCodePanel : MonoBehaviour
     public GameObject menuPanel;
     public GameObject warningMessage;
     public TMP_Text keyInput;
+    public TMP_Text initialCommand;
+    CaseSelection selection = CaseSelection.None;
 
 
     private void Start()
@@ -32,15 +37,32 @@ public class DeliveryCodePanel : MonoBehaviour
 
     public void GetEnterInput()
     {
-        if (gameDeliveryCode.Length != 5   ||   !DeliveryInformationTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
+        if (selection == CaseSelection.Recebimento)
         {
-            if (!warningMessage.activeInHierarchy)
-                StartCoroutine(WrongCode());
+            if (gameDeliveryCode.Length != 5 || !DeliveryInformationTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
+            {
+                if (!warningMessage.activeInHierarchy)
+                    StartCoroutine(WrongCode());
 
-            return;
+                return;
+            }
+
+            GameManager.Instance.CreateNewBox(gameDeliveryCode);
+        }
+        else if (selection == CaseSelection.Audin) 
+        {
+            if (gameDeliveryCode.Length != 5 || !AudinQuestionTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
+            {
+                if (!warningMessage.activeInHierarchy)
+                    StartCoroutine(WrongCode());
+
+                return;
+            }
+
+            //GameManager.Instance.CreateNewBox(gameDeliveryCode); //MUDAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
-        GameManager.Instance.CreateNewBox(gameDeliveryCode);
+        
         gameDeliveryCode = "";
         UpdateText();
         ClosePanel();
@@ -56,12 +78,23 @@ public class DeliveryCodePanel : MonoBehaviour
     {
         inputPanel.SetActive(false);
         menuPanel.SetActive(true);
+        selection = CaseSelection.None;
     }
 
-    public void OpenPanel()
+    public void OpenPanelRecebimento()
     {
         inputPanel.SetActive(true);
         menuPanel.SetActive(false);
+        selection = CaseSelection.Recebimento;
+        initialCommand.text = "Insira o código informado na mesa para Receber o Item";
+    }
+
+    public void OpenPanelAudin()
+    {
+        inputPanel.SetActive(true);
+        menuPanel.SetActive(false);
+        selection = CaseSelection.Audin;
+        initialCommand.text = "Insira o código informado na mesa para resolver a AUDIN";
     }
 
     public void CloseWelcomeMessage()
