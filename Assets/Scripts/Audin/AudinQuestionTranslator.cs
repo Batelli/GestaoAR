@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AUDIN_Subject { Recebimento }
+public enum AUDIN_Subject { Recebimento, None }
 
 
 public class AudinQuestionTranslator : MonoBehaviour
@@ -70,7 +70,7 @@ public class AudinQuestionTranslator : MonoBehaviour
         switch (subject)
         {
             case AUDIN_Subject.Recebimento:
-                return recebimentoQuestions.answers.Length;
+                return recebimentoQuestions.answers.Count;
 
             default:
                 return 0;
@@ -122,12 +122,36 @@ public class AudinQuestionTranslator : MonoBehaviour
 
     #region Decode
 
+    public AUDIN_Subject GetSubject(string keyCode)
+    {
+        switch (keyCode)
+        {
+            case "A":
+            case "E":
+            case "I":
+            case "M":
+            case "Q":
+            case "U":
+            case "Y":
+            case "3":
+                return AUDIN_Subject.Recebimento;
+
+            default:
+                return AUDIN_Subject.None;
+        }
+    }
+
     public bool IsTheCodeValid(string keyCode)
     {
+        AUDIN_Subject subject = GetSubject(keyCode);
+        if (subject == AUDIN_Subject.None)
+            return false;
+
+
         int[] indexList = GetQuestionIndex(keyCode);
         for (int i = 0; i < indexList.Length; i++)
         {
-            if (indexList[i] < 0 || indexList[i] >= recebimentoQuestions.answers.Length)
+            if (indexList[i] < 0 || indexList[i] >= GetQuestionLength(subject))
                 return false;
         }
 

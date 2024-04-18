@@ -7,6 +7,6 @@ using UnityEngine;
 public class AudinQuestion : ScriptableObject
 {
     public AUDIN_Subject subject;
-    public string[] answers;
-    public bool[] answersKeys;
+    public List<string> answers;
+    public List<bool> answersKeys;
 }

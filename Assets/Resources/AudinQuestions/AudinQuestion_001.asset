@@ -13,5 +13,75 @@ MonoBehaviour:
   m_Name: AudinQuestion_001
   m_EditorClassIdentifier: 
   subject: 0
-  answers: []
-  answersKeys: 
+  answers:
+  - "A atividade de confer\xEAncia qualitativa e quantitativa deve ser realizada
+    na etapa de recebimento."
+  - "A regulariza\xE7\xE3o \xE9 uma atividade que deve ser feita ap\xF3s a distribui\xE7\xE3o. "
+  - "A venda de inserv\xEDveis deve ocorrer antes do recebimento das mercadorias. "
+  - "A confer\xEAncia encerra-se na verifica\xE7\xE3o das caracter\xEDsticas t\xE9cnicas
+    do item fornecido e de sua documenta\xE7\xE3o fiscal."
+  - "Para o recebimento de materiais \xE9 necess\xE1rio possuir pessoal treinado
+    e equipamentos \xE0 disposi\xE7\xE3o para os procedimentos de entrada de mercadorias."
+  - 'Deve-se evitar filas e reduzir o tempo de espera dos fornecedores, oferecendo
+    estacionamento com capacidade adequada ao volume de entrega. '
+  - "Na confer\xEAncia de qualidade executam-se todas as confer\xEAncias de acordo
+    com as exig\xEAncias legais, (por exemplo, nota fiscal e seu correto preenchimento)
+    e an\xE1lise para verificar se existem distor\xE7\xF5es ou itens diferentes do
+    pedido emitido pela \xE1rea de compras da empresa. "
+  - "A confer\xEAncia quantitativa \xE9 feita para verificar se a quantidade est\xE1
+    correta. "
+  - "Existe um m\xE9todo de confer\xEAncia quantitativa, no qual n\xE3o se diz antecipadamente
+    \xE0 pessoa que executar\xE1 qual a quantidade solicitada, dessa forma, primeiro
+    o conferente faz a contagem e depois a compara\xE7\xE3o com a quantidade pedida. "
+  - "A confer\xEAncia de conformidade \xE9 realizada para verificar se a qualidade
+    do material n\xE3o est\xE1 comprometida, qual o tipo do material recebido, as
+    especifica\xE7\xF5es t\xE9cnicas e os demais itens n\xE3o conferidos at\xE9 este
+    processo, e que comp\xF5em as exig\xEAncias no pedido de compra."
+  - "As resmas de papel A4 s\xE3o exemplos de materiais aplicados em diversos setores
+    da organiza\xE7\xE3o, podendo, portanto, ser classificadas como materiais de
+    consumo geral. "
+  - "Uma das fun\xE7\xF5es dos estoques \xE9 proteger as organiza\xE7\xF5es de eventuais
+    oscila\xE7\xF5es de demanda, embora eles n\xE3o possam salvaguard\xE1-las das
+    oscila\xE7\xF5es do mercado. "
+  - "Na etapa da entrada de materiais, o laudo da inspe\xE7\xE3o t\xE9cnica \xE9
+    emitido e a confer\xEAncia de quantidade realizada. "
+  - "Na etapa de confer\xEAncia qualitativa \xE9 tomada a decis\xE3o de aceite ou
+    recusa dos materiais recebidos. "
+  - "A regulariza\xE7\xE3o \xE9 a momento em que ocorre a verifica\xE7\xE3o da quantidade
+    recebida e sua correspond\xEAncia com a constante no documento fiscal. "
+  - "A inspe\xE7\xE3o t\xE9cnica ocorre na etapa de entrada de materiais. "
+  - "Na etapa de regulariza\xE7\xE3o ocorre os procedimentos de controle, momento
+    em que as quantidades recebidas e faturadas s\xE3o confrontadas e a decis\xE3o
+    de aceite ou recusa \xE9 expressada. "
+  - "O controle dos estoques depende de um sistema eficiente, o qual deve fornecer,
+    a qualquer momento, as quantidades dispon\xEDveis, a localiza\xE7\xE3o dos itens,
+    as compras em processo de recebimento, as devolu\xE7\xF5es ao fornecedor e as
+    compras recebidas e aceitas.  "
+  - "O almoxarifado contribui com a recep\xE7\xE3o do material ocorre quando da entrega
+    deste pelo fornecedor. "
+  - "O almoxarifado contribui com a realiza\xE7\xE3o e/ou acompanhamento da confer\xEAncia
+    quantitativa e qualitativa. "
+  - "O almoxarifado contribui com a determina\xE7\xE3o da quantidade do material
+    a ser comprado. "
+  - "O almoxarifado contribui com a entrada f\xEDsica dos materiais no estoque. "
+  - "L\xE1pis, canetas, borrachas e clipes podem ser classificados como materiais
+    de consumo geral. "
+  - "Os materiais, como se sabe, podem ser de consumo ou permanente, devendo ser
+    estocados de acordo com suas caracter\xEDsticas. Para que seja considerado de
+    consumo, o material deve atender a pelo menos um dos crit\xE9rios como o de perpetuidade. "
+  - "Os materiais, como se sabe, podem ser de consumo ou permanente, devendo ser
+    estocados de acordo com suas caracter\xEDsticas. Para que seja considerado de
+    consumo, o material deve atender a pelo menos um dos crit\xE9rios como o de perecibilidade. "
+  - "Os materiais, como se sabe, podem ser de consumo ou permanente, devendo ser
+    estocados de acordo com suas caracter\xEDsticas. Para que seja considerado de
+    consumo, o material deve atender a pelo menos um dos crit\xE9rios como o de incorporabilidade."
+  - "Os materiais, como se sabe, podem ser de consumo ou permanente, devendo ser
+    estocados de acordo com suas caracter\xEDsticas. Para que seja considerado de
+    consumo, o material deve atender a pelo menos um dos crit\xE9rios como o de transformabilidade. "
+  - "Considere-se que as lixeiras pl\xE1sticas de determinado \xF3rg\xE3o p\xFAblico
+    do Distrito Federal durem, em m\xE9dia, dois anos, embora apresentem substancial
+    deforma\xE7\xE3o a partir de um ano de uso. Nesse caso, as referidas lixeiras
+    s\xE3o consideradas material permanente. "
+  - "Diferentemente do que ocorre com bens patrimoniais, o recebimento de material
+    de consumo pelo governo federal ocorrer\xE1 apenas em decorr\xEAncia de compra."
+  answersKeys: 0100000001010001010001000000000001010101000101000101010000
