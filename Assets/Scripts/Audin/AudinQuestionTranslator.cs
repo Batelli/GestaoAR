@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum AUDIN_Subject { Recebimento }
+
+
 public class AudinQuestionTranslator : MonoBehaviour
 {
     public static AudinQuestionTranslator Instance { get; private set; }
+    public AudinQuestion recebimentoQuestions;
+
 
     private void Awake()
     {
@@ -15,28 +20,61 @@ public class AudinQuestionTranslator : MonoBehaviour
             Instance = this;
     }
 
-    public string GenerateCode()
+    #region Encode
+    // AXXYYZZ - A Subject, XX Question 1, YY Question 2, ZZ Question 3
+    public string GenerateCode(AUDIN_Subject subject)
     {
+        string newKey = GetEncodedSubject(subject);
+        int max, num1, num2, num3;
+
+        max = GetQuestionLength(subject);
+        num1 = Random.Range(0, max);
+
+        do
+        {
+            num2 = Random.Range(0, max);
+        }
+        while (num2 == num1);
+
+        do
+        {
+            num3 = Random.Range(0, max);
+        }
+        while (num3 == num1 || num3 == num2);
+
+
+        string str = num1.ToString("00") + num2.ToString("00") + num3.ToString("00");
+        newKey += GetEncodedChar(str.Substring(0, 1)) + GetEncodedChar(str.Substring(1, 1)) +
+                    GetEncodedChar(str.Substring(2, 1)) + GetEncodedChar(str.Substring(3, 1)) +
+                    GetEncodedChar(str.Substring(4, 1)) + GetEncodedChar(str.Substring(5, 1));
+
+        return newKey;
+    }
+
+    string GetEncodedSubject(AUDIN_Subject subject)
+    {
+        string[] strList;
+
+        switch (subject)
+        {
+            case AUDIN_Subject.Recebimento:
+                strList = new string[8] { "A", "E", "I", "M", "Q", "U", "Y", "3" };
+                return strList[Random.Range(0, strList.Length)];
+        }
+
         return "";
     }
 
-    public bool IsTheCodeValid(string keyCode)
+    int GetQuestionLength(AUDIN_Subject subject)
     {
-        int index = GetQuestionIndex(keyCode);
-        if (index < 0)  //|| index >= itemCatalogue.Length <<<<<<<<<<<<<<<<<<<<<<< Modificar
-            return false;
+        switch (subject)
+        {
+            case AUDIN_Subject.Recebimento:
+                return recebimentoQuestions.answers.Length;
 
-        return true;
-    }
-
-    public int GetQuestionIndex(string keyCode)
-    {
-        return GetDecodedIndex(keyCode.Substring(3, 1)) + (GetDecodedIndex(keyCode.Substring(2, 1)) * 10) + (GetDecodedIndex(keyCode.Substring(1, 1)) * 100);
-    }
-
-    string GetQuestionCode()
-    {
-        return GetEncodedChar("".Substring(0, 1)) + GetEncodedChar("".Substring(1, 1) + GetEncodedChar("".Substring(2, 1)));
+            default:
+                return 0;
+        }
     }
 
     string GetEncodedChar(string str)
@@ -78,6 +116,32 @@ public class AudinQuestionTranslator : MonoBehaviour
         }
 
         return str;
+    }
+
+    #endregion Encode
+
+    #region Decode
+
+    public bool IsTheCodeValid(string keyCode)
+    {
+        int[] indexList = GetQuestionIndex(keyCode);
+        for (int i = 0; i < indexList.Length; i++)
+        {
+            if (indexList[i] < 0 || indexList[i] >= recebimentoQuestions.answers.Length)
+                return false;
+        }
+
+        return true;
+    }
+
+    public int[] GetQuestionIndex(string keyCode)
+    {
+        int[] indexList = new int[3];
+        indexList[0] = GetDecodedIndex(keyCode.Substring(2, 1)) + (GetDecodedIndex(keyCode.Substring(1, 1)) * 10);
+        indexList[1] = GetDecodedIndex(keyCode.Substring(4, 1)) + (GetDecodedIndex(keyCode.Substring(3, 1)) * 10);
+        indexList[2] = GetDecodedIndex(keyCode.Substring(6, 1)) + (GetDecodedIndex(keyCode.Substring(5, 1)) * 10);
+
+        return indexList;
     }
 
     int GetDecodedIndex(string str)
@@ -133,4 +197,6 @@ public class AudinQuestionTranslator : MonoBehaviour
 
         return 0;
     }
+
+    #endregion Decode
 }

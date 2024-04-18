@@ -53,7 +53,7 @@ public class CodePanel : MonoBehaviour
         }
         else if (selection == CaseSelection.Audin) 
         {
-            if (gameDeliveryCode.Length != 5 || !AudinQuestionTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
+            if (gameDeliveryCode.Length != 7 || !AudinQuestionTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
             {
                 if (!warningMessage.activeInHierarchy)
                     StartCoroutine(WrongCode());
