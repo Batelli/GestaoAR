@@ -124,7 +124,7 @@ public class AudinQuestionTranslator : MonoBehaviour
 
     public AUDIN_Subject GetSubject(string keyCode)
     {
-        switch (keyCode)
+        switch (keyCode.Substring(0,1))
         {
             case "A":
             case "E":
@@ -224,7 +224,7 @@ public class AudinQuestionTranslator : MonoBehaviour
 
     public string GetAnswerText(int index, AUDIN_Subject subject)
     {
-        if (subject == AUDIN_Subject.None || index < 0 || index >= GetQuestionLength(subject))
+        if (index < 0 || index >= GetQuestionLength(subject))
             return "";
 
         switch (subject)
@@ -240,7 +240,7 @@ public class AudinQuestionTranslator : MonoBehaviour
 
     public bool GetAnswerKey(int index, AUDIN_Subject subject)
     {
-        if (subject == AUDIN_Subject.None || index < 0 || index >= GetQuestionLength(subject))
+        if (index < 0 || index >= GetQuestionLength(subject))
             return false;
 
         switch (subject)
@@ -252,6 +252,34 @@ public class AudinQuestionTranslator : MonoBehaviour
             default:
                 return false;
         }
+    }
+
+    public string[] GetAllAnswerText(string keyCode)
+    {
+        AUDIN_Subject subject = GetSubject(keyCode);
+        int[] index = GetQuestionIndex(keyCode);
+        string[] answers = new string[3];
+
+        for (int i = 0; i < index.Length; i++)
+        {
+            answers[i] = GetAnswerText(index[i], subject);
+        }
+
+        return answers;
+    }
+
+    public bool[] GetAllAnswerKey(string keyCode)
+    {
+        AUDIN_Subject subject = GetSubject(keyCode);
+        int[] index = GetQuestionIndex(keyCode);
+        bool[] answerKeys = new bool[3];
+
+        for (int i = 0; i < index.Length; i++)
+        {
+            answerKeys[i] = GetAnswerKey(index[i], subject);
+        }
+
+        return answerKeys;
     }
 
     #endregion Decode
