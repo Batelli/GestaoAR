@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        newPos += Vector3.up;
         GameObject gmo = Instantiate(boxPrefab, newPos, Quaternion.identity) as GameObject;
         Vector3 rot = gmo.transform.eulerAngles;
         rot.y = Random.Range(0, 360);
