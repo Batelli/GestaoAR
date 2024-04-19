@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public GameObject boxPrefab;
+    public GameObject audinPrefab;
 
 
     private void Awake()
@@ -42,5 +43,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gmo);
         }
+    }
+
+    public void CreateNewAudin(string newCode)
+    {
+
     }
 }

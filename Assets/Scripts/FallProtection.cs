@@ -10,7 +10,7 @@ public class FallProtection : MonoBehaviour
         if (!fallBlock)
             return;
 
-        Vector3 newPos = Camera.main.transform.position + (Vector3.up * 0.5f) + (Camera.main.transform.forward * 1.5f);
+        Vector3 newPos = Camera.main.transform.position + (Vector3.up * 0.5f) + Camera.main.transform.forward;
         other.transform.position = newPos;
     }
 }

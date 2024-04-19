@@ -59,7 +59,7 @@ public class CodePanel : MonoBehaviour
                 return;
             }
 
-            //GameManager.Instance.CreateNewBox(gameDeliveryCode); //MUDAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            GameManager.Instance.CreateNewAudin(gameDeliveryCode);
         }
 
         
