@@ -14,7 +14,6 @@ public class CodePanel : MonoBehaviour
     public GameObject inputPanel;
     public GameObject menuPanel;
     public GameObject warningMessage;
-    public GameObject helpPanel;
     public TMP_Text keyInput;
     public TMP_Text initialCommand;
     CaseSelection selection = CaseSelection.None;
@@ -26,7 +25,6 @@ public class CodePanel : MonoBehaviour
         warningMessage.SetActive(false);
         inputPanel.SetActive(false);
         menuPanel.SetActive(false);
-        helpPanel.SetActive(false);
         welcomePanel.SetActive(true);
     }
 
@@ -87,7 +85,6 @@ public class CodePanel : MonoBehaviour
     {
         inputPanel.SetActive(true);
         menuPanel.SetActive(false);
-        helpPanel.SetActive(false);
         selection = CaseSelection.Recebimento;
         initialCommand.text = "Insira o código informado na mesa para Receber o Item";
     }
@@ -96,7 +93,6 @@ public class CodePanel : MonoBehaviour
     {
         inputPanel.SetActive(true);
         menuPanel.SetActive(false);
-        helpPanel.SetActive(false);
         selection = CaseSelection.Audin;
         initialCommand.text = "Insira o código informado na mesa para resolver a AUDIN";
     }
@@ -117,10 +113,5 @@ public class CodePanel : MonoBehaviour
         warningMessage.SetActive(true);
         yield return new WaitForSeconds(2);
         warningMessage.SetActive(false);
-    }
-
-    public void EnableHelp()
-    {
-        helpPanel.SetActive(!helpPanel.activeInHierarchy);
     }
 }
