@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void CreateNewBox(string newCode)
     {
-        Vector3 newPos = Camera.main.transform.position + (Camera.main.transform.forward * 2);
+        Vector3 newPos = Camera.main.transform.position + (Camera.main.transform.forward * 1.2f);
         RaycastHit hitInfo;
         if (!Physics.Raycast(newPos, Vector3.down, out hitInfo, 10))
         {
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     public void CreateNewAudin(string newCode)
     {
-        Vector3 newPos = Camera.main.transform.position + (Camera.main.transform.forward * 1.2f);
+        Vector3 newPos = Camera.main.transform.position + (Camera.main.transform.forward * 0.8f);
         RaycastHit hitInfo;
         if (!Physics.Raycast(newPos, Vector3.down, out hitInfo, 10))
         {
