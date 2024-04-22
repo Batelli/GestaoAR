@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxPrefab: {fileID: 314347977175415049, guid: 22addc1c3af95284da116404970ad06e, type: 3}
+  audinPrefab: {fileID: 5603791890826975533, guid: 4f74fe11da3d01f41910b9204d4f797a, type: 3}
 --- !u!114 &5916067738764428525
 MonoBehaviour:
   m_ObjectHideFlags: 0

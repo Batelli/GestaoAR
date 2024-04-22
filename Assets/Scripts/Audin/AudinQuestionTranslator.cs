@@ -10,6 +10,7 @@ public class AudinQuestionTranslator : MonoBehaviour
     public static AudinQuestionTranslator Instance { get; private set; }
     public AudinQuestion recebimentoQuestions;
 
+    // A7M6UU2
 
     private void Awake()
     {
@@ -18,6 +19,12 @@ public class AudinQuestionTranslator : MonoBehaviour
             Destroy(this);
         else
             Instance = this;
+    }
+
+    private void Start()
+    {
+        string str = GenerateCode(AUDIN_Subject.Recebimento);
+        Debug.Log(str);
     }
 
     #region Encode

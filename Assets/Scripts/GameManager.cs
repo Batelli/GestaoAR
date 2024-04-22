@@ -48,6 +48,29 @@ public class GameManager : MonoBehaviour
 
     public void CreateNewAudin(string newCode)
     {
+        Vector3 newPos = Camera.main.transform.position + (Camera.main.transform.forward * 1.2f);
+        RaycastHit hitInfo;
+        if (!Physics.Raycast(newPos, Vector3.down, out hitInfo, 10))
+        {
+            Debug.Log("Floor not found");
+            return;
+        }
 
+        newPos += Vector3.up;
+        GameObject gmo = Instantiate(audinPrefab, newPos, Quaternion.identity) as GameObject;
+        Vector3 rot = gmo.transform.eulerAngles;
+        rot.y = Random.Range(0, 360);
+        gmo.transform.eulerAngles = rot;
+
+        //Configurando a Caixa
+        AudinNote note = gmo.GetComponent<AudinNote>();
+        if (note)
+        {
+            note.LoadNote(newCode);
+        }
+        else
+        {
+            Destroy(gmo);
+        }
     }
 }
