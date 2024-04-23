@@ -341,7 +341,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "U":
             case "Y":
             case "3":
-                return "Hospital";
+                return "HOSPITAL MARIA ODÍLIA TEIXEIRA";
             case "B":
             case "F":
             case "J":
@@ -350,7 +350,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "V":
             case "Z":
             case "4":
-                return "Museu";
+                return "MUSEU DA REPÚBLICA";
             case "C":
             case "G":
             case "K":
@@ -359,7 +359,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "W":
             case "1":
             case "5":
-                return "Escola";
+                return "INSTITUTO FEDERAL DE BRASÍLIA";
             case "D":
             case "H":
             case "L":

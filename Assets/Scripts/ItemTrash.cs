@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ItemTrash : MonoBehaviour
 {
-    public ParticleSystem destroyFX;
+    public UnityEvent destroyEvents;
 
     void OnTriggerEnter(Collider collider)
     {
@@ -12,6 +13,6 @@ public class ItemTrash : MonoBehaviour
             return;
 
         Destroy(collider.gameObject);
-        destroyFX.Play();
+        destroyEvents.Invoke();
     }
 }
