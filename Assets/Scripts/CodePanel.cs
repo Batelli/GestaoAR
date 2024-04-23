@@ -12,6 +12,7 @@ public class CodePanel : MonoBehaviour
     public GameObject menuPanel;
     public GameObject warningMessage;
     public TMP_Text keyInput;
+    public AudioSource panelSFX;
 
 
     private void Start()
@@ -64,12 +65,14 @@ public class CodePanel : MonoBehaviour
     {
         inputPanel.SetActive(false);
         menuPanel.SetActive(true);
+        panelSFX.Play();
     }
 
     public void OpenPanelRecebimento()
     {
         inputPanel.SetActive(true);
         menuPanel.SetActive(false);
+        panelSFX.Play();
     }
 
     public void CloseWelcomeMessage()

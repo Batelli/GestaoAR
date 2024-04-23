@@ -9,6 +9,10 @@ public class OnTriggerDoAction : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
+        Rigidbody rig = col.GetComponent<Rigidbody>();
+        if (!rig || rig.isKinematic)
+            return;
+
         onTriggerAction.Invoke();
     }
 }
