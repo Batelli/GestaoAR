@@ -21,12 +21,6 @@ public class AudinQuestionTranslator : MonoBehaviour
             Instance = this;
     }
 
-    private void Start()
-    {
-        string str = GenerateCode(AUDIN_Subject.Recebimento);
-        Debug.Log(str);
-    }
-
     #region Encode
     // AXXYYZZ - A Subject, XX Question 1, YY Question 2, ZZ Question 3
     public string GenerateCode(AUDIN_Subject subject)
