@@ -20,6 +20,7 @@ public class DeliveryBox : MonoBehaviour
     public TMP_Text deliveryDate;
     public TMP_Text shoppingDate;
     public TMP_Text measureType;
+    public GameObject[] nfBuildingIcon;
 
     public TMP_Text boxNFNumber;
     public TMP_Text boxObjectName;
@@ -48,11 +49,13 @@ public class DeliveryBox : MonoBehaviour
         shoppingDate.text = DeliveryInformationTranslator.Instance.GetCurrentDate();
         measureType.text = DeliveryInformationTranslator.Instance.GetMeasureType(codeToTranslate);
 
-        boxNFNumber.text = nfNumber.text;
-        boxObjectName.text = objectName.text;
-        boxQtt.text = unitQttNumber.text + "X";
+        boxNFNumber.text = codeToTranslate.ToUpper();
+        boxObjectName.text = DeliveryInformationTranslator.Instance.GetObjectName(codeToTranslate).ToUpper();
+        boxQtt.text = DeliveryInformationTranslator.Instance.GetUnitQtt(codeToTranslate)+"X";
 
-        boxBuildingIcon[(int)DeliveryInformationTranslator.Instance.GetBuildingType(codeToTranslate)].SetActive(true);
+        int temp = (int)DeliveryInformationTranslator.Instance.GetBuildingType(codeToTranslate);
+        boxBuildingIcon[temp].SetActive(true);
+        nfBuildingIcon[temp].SetActive(true);
 
         bool damagedBox = DeliveryInformationTranslator.Instance.GetDamagedBox(codeToTranslate);
         oldBox.SetActive(damagedBox);
