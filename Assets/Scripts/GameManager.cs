@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public GameObject boxPrefab;
     public GameObject audinPrefab;
+    public GameObject audinChar;
 
 
     private void Awake()
@@ -62,11 +63,12 @@ public class GameManager : MonoBehaviour
         rot.y = Random.Range(0, 360);
         gmo.transform.eulerAngles = rot;
 
-        //Configurando a Caixa
+        //Configurando a Nota
         AudinNote note = gmo.GetComponent<AudinNote>();
         if (note)
         {
             note.LoadNote(newCode);
+            audinChar.SetActive(true);
         }
         else
         {
