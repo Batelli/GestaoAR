@@ -368,7 +368,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "X":
             case "2":
             case "6":
-                return "Prefeitura";
+                return "PALÁCIO DO BURITI";
         }
 
         return "";
