@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MI_Cardboard_Boxes.002
-    second: {fileID: 2100000, guid: 495f08ad43a7881498682fa7a85aa401, type: 2}
+    second: {fileID: 2100000, guid: a584052d05b001d4aabfc826272b194e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
