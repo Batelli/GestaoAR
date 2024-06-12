@@ -26,11 +26,6 @@ public class DeliveryInformationTranslator : MonoBehaviour
     public static DeliveryInformationTranslator Instance { get; private set; }
     
     public CatalogueItem[] itemCatalogue;
-    
-    int consumptionQtt = 0;
-    int perma1Qtt = 0;
-    int perma2Qtt = 0;
-    int perma3Qtt = 0;
 
     /*      O código dos itens é composto por 5 dígitos alfanuméricos (1-9, A-Z)
                                     X YYY Z
@@ -49,34 +44,12 @@ public class DeliveryInformationTranslator : MonoBehaviour
         else
             Instance = this;
     }
-
-    private void Start()
-    {
-        for (int i = 0; i < itemCatalogue.Length; i++)
-        {
-            switch (itemCatalogue[i].itemCaseType)
-            {
-                case ItemCaseType.Consumption1:
-                    consumptionQtt++;
-                    break;
-                case ItemCaseType.Permanent1:
-                    perma1Qtt++;
-                    break;
-                case ItemCaseType.Permanent2:
-                    perma2Qtt++;
-                    break;
-                case ItemCaseType.Permanent3:
-                    perma3Qtt++;
-                    break;
-            }
-        }
-    }
     #endregion Unity
 
     #region Encode
-    public string GenerateCode(BuildingType building, ItemCaseType itemCaseType, int errorChance)
+    public string GenerateCode(BuildingType building, int errorChance)
     {
-        return GetBuildingCode(building) + GetItemCode(itemCaseType, building) + GetErrorCode(errorChance);
+        return GetBuildingCode(building) + GetItemCode(building) + GetErrorCode(errorChance);
     }
 
     public string GenerateCodeNoError(string keyCode)
@@ -127,55 +100,36 @@ public class DeliveryInformationTranslator : MonoBehaviour
         return "";
     }
 
-    string GetItemCode(ItemCaseType itemCaseType, BuildingType building)
+    string GetItemCode(BuildingType building)
     {
-        int min = 0;
-        int max = 0;
-
-        switch (itemCaseType)
-        {
-            case ItemCaseType.Consumption1:
-                min = 0;
-                max = consumptionQtt;
-                break;
-            case ItemCaseType.Permanent1:
-                min = consumptionQtt;
-                max = consumptionQtt + perma1Qtt;
-                break;
-            case ItemCaseType.Permanent2:
-                min = consumptionQtt + perma1Qtt;
-                max = consumptionQtt + perma1Qtt + perma2Qtt;
-                break;
-            case ItemCaseType.Permanent3:
-                min = consumptionQtt + perma1Qtt + perma2Qtt;
-                max = consumptionQtt + perma1Qtt + perma2Qtt + perma3Qtt;
-                break;
-            case ItemCaseType.PermanentAll:
-                min = consumptionQtt;
-                max = consumptionQtt + perma1Qtt + perma2Qtt + perma3Qtt;
-                break;
-            case ItemCaseType.All:
-                min = 0;
-                max = consumptionQtt + perma1Qtt + perma2Qtt + perma3Qtt;
-                break;
-        }
-
         int index = 0;
 
-        do
+        switch (building)
         {
-            index = Random.Range(min, max);
-        }
-        while (
-            (building == BuildingType.Hospital  &&  !itemCatalogue[index].isHospitalItem) ||
-            (building == BuildingType.School && !itemCatalogue[index].isSchoolItem) ||
-            (building == BuildingType.Museum && !itemCatalogue[index].isMuseumItem) ||
-            (building == BuildingType.CityHall && !itemCatalogue[index].isCityHallItem)
-            );
+            case BuildingType.Museum:
+                do index = Random.Range(0, itemCatalogue.Length);
+                while (!itemCatalogue[index].isMuseumItem);
+                break;
 
+            case BuildingType.Hospital:
+                do index = Random.Range(0, itemCatalogue.Length);
+                while (!itemCatalogue[index].isHospitalItem);
+                break;
+
+            case BuildingType.School:
+                do index = Random.Range(0, itemCatalogue.Length);
+                while (!itemCatalogue[index].isSchoolItem);
+                break;
+
+            case BuildingType.CityHall:
+                do index = Random.Range(0, itemCatalogue.Length);
+                while (!itemCatalogue[index].isCityHallItem);
+                break;
+        }
 
         string str = index.ToString("000");
-        return GetEncodedChar(str.Substring(0,1)) + GetEncodedChar(str.Substring(1, 1) + GetEncodedChar(str.Substring(2, 1)));
+        string newCode = GetEncodedChar(str.Substring(0, 1)) + GetEncodedChar(str.Substring(1, 1)) + GetEncodedChar(str.Substring(2, 1));
+        return newCode;
     }
 
     string GetEncodedChar(string str)
