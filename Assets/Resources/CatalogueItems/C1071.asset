@@ -19,6 +19,7 @@ MonoBehaviour:
     TIPO A4, COR INCOLOR, FORMATO 210 X 297 MM, LOMBADA 5 MM, CARACTER\xCDSTICAS
     ADICIONAIS LONG STEELCRYSTAL"
   itemQuantity: 350
+  itemMeasureType: 0
   itemCost: 0.29
   isHospitalItem: 1
   isSchoolItem: 1

@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "GRAMPEADOR, MATERIAL METAL, TIPO MESA, CAPACIDADE 25 FL, TAMANHO
     GRAMPO 26/6, CARACTER\xCDSTICAS ADICIONAIS BASE DE BORRACHA"
   itemQuantity: 287
+  itemMeasureType: 0
   itemCost: 21.15
   isHospitalItem: 1
   isSchoolItem: 1

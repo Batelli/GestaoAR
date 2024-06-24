@@ -20,6 +20,7 @@ MonoBehaviour:
     CAPACIDADE REFRIGERA\xC7\xC3O 2,20 L/H, CARACTER\xCDSTICAS ADICIONAIS \xC1GUA
     GELADA E \xC1GUA NATURAL/ TUBO A\xC7O INOXID\xC1VEL/PO-, COR BRANCA"
   itemQuantity: 157
+  itemMeasureType: 0
   itemCost: 557.7
   isHospitalItem: 1
   isSchoolItem: 1

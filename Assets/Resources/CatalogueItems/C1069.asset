@@ -19,6 +19,7 @@ MonoBehaviour:
     QUANTIDADE FOLHAS 96 FL, COMPRIMENTO 202 MM, LARGURA 140 MM, CARACTER\xCDSTICAS
     ADICIONAIS FOLHA PAUTADA E CAPA DURA"
   itemQuantity: 352
+  itemMeasureType: 0
   itemCost: 4.12
   isHospitalItem: 1
   isSchoolItem: 1

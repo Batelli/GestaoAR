@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "TELEVISOR: com no m\xEDnimo as seguintes caracter\xEDsticas:
     Smart TV; 32 polegadas; LED; Resolu\xE7\xE3o HD; 1 USB; 1 HDMI; Conversor Digital"
   itemQuantity: 2
+  itemMeasureType: 0
   itemCost: 2198.59
   isHospitalItem: 1
   isSchoolItem: 1

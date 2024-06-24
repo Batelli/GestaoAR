@@ -19,6 +19,7 @@ MonoBehaviour:
     BTU/H, TENS\xC3O 220 V, TIPO SPLIT, MODELO PAREDE, CARACTER\xCDSTICAS ADICIONAIS
     COM CONTROLE REMOTO SEM FIO"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 3834.05
   isHospitalItem: 1
   isSchoolItem: 1

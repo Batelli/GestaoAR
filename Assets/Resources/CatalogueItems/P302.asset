@@ -20,6 +20,7 @@ MonoBehaviour:
     220 V, FREQU\xCANCIA 60 HZ, CARACTER\xCDSTICAS ADICIONAIS GERADOR ALTA FREQU\xCANCIA,
     CONTROLE DE KV E MAS, AC I, ADICIONAIS C/DESCARGA TEMPO CAPACITOR,C/ 300 MAS"
   itemQuantity: 3
+  itemMeasureType: 0
   itemCost: 15597
   isHospitalItem: 1
   isSchoolItem: 0

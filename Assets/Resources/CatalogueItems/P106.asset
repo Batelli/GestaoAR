@@ -22,6 +22,7 @@ MonoBehaviour:
     ADICIONAIS CABECEIRA REGUL\xC1VEL POR CREMALHEIRA, ACESS\xD3RIOS LEITO FIXO C/
     COLCH\xC3O, COURVIN"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 580
   isHospitalItem: 1
   isSchoolItem: 0

@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "PINCEL MARCADOR PERMANENTE CD, MATERIAL PL\xC1STICO, TIPO PONTA
     FELTRO, COR TINTA AZUL"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 2.33
   isHospitalItem: 1
   isSchoolItem: 1

@@ -19,6 +19,7 @@ MonoBehaviour:
     SILICONE, HASTE HASTE A\xC7O INOX, TUBO TUBO 'Y' SILICONE, AUSCULTADOR AUSCULTADOR
     A\xC7O INOX C/ ANEL DE BORRACHA, TAMANHO PEDI\xC1TRICO"
   itemQuantity: 200
+  itemMeasureType: 0
   itemCost: 210
   isHospitalItem: 1
   isSchoolItem: 0

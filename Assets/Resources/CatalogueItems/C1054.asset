@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "CANETA MARCA-TEXTO, MATERIAL PL\xC1STICO, TIPO PONTA FLUORESCENTE,
     COR LARANJA"
   itemQuantity: 291
+  itemMeasureType: 0
   itemCost: 1.03
   isHospitalItem: 1
   isSchoolItem: 1

@@ -19,6 +19,7 @@ MonoBehaviour:
     e rod\xEDzio; Cor creme com 2 portas e m\xEDnimo 2 prateleiras internas; Fechadura
     com chave; Altura 165 cm; Largura 90 cm; Profundidade 45 cm"
   itemQuantity: 3
+  itemMeasureType: 0
   itemCost: 1655.7
   isHospitalItem: 1
   isSchoolItem: 1

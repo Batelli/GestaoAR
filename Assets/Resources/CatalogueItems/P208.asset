@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: "MESA DE SOM ANAL\xD3GICA"
   itemDescription: "MESA DE SOM ANAL\xD3GICA: 10 entradas."
   itemQuantity: 5
+  itemMeasureType: 0
   itemCost: 892.63
   isHospitalItem: 0
   isSchoolItem: 1

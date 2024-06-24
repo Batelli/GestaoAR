@@ -19,6 +19,7 @@ MonoBehaviour:
     MATERIAL PONTA METAL, CARACTER\xCDSTICAS ADICIONAIS TINTA:NANQUIM/ USO:DESCARTAVEL,
     TAMANHO PONTA 0,30 MM, COR PRETA"
   itemQuantity: 7
+  itemMeasureType: 0
   itemCost: 14.05
   isHospitalItem: 1
   isSchoolItem: 1

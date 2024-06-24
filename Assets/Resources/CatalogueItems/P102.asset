@@ -20,6 +20,7 @@ MonoBehaviour:
     CADEIRA FIXA COM ESTRUTURA EM A\xC7O CROMADO, APOIO DE BRA\xC7OS FIXO, ENCOSTO
     E ASSENTO EM POLIPROPILENO NA COR BRANCA."
   itemQuantity: 61
+  itemMeasureType: 0
   itemCost: 305
   isHospitalItem: 1
   isSchoolItem: 1

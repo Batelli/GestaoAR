@@ -21,6 +21,7 @@ MonoBehaviour:
     de Voltagem; (110V e/ou bivolt); Dimens\xF5es m\xEDnimas (Altura 57,00 cm, Largura
     39,0 cm e Profundidade 29,50 cm)"
   itemQuantity: 2
+  itemMeasureType: 0
   itemCost: 3741.09
   isHospitalItem: 1
   isSchoolItem: 1

@@ -18,7 +18,8 @@ MonoBehaviour:
   itemDescription: "DISPOSITIVO ARMAZENAMENTO FITA, CAPACIDADE ARMAZENAMENTO 48,
     VELOCIDADE TRANSFER\xCANCIA 10.8 TB/H, COMPATIBILIDADE LTO-5, LTO-6, LTO7 E LTO-8,
     INTERFACE SAS, ALIMENTA\xC7\xC3O 127/240 V"
-  itemQuantity: 5
+  itemQuantity: 2
+  itemMeasureType: 0
   itemCost: 79990
   isHospitalItem: 1
   isSchoolItem: 0

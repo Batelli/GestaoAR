@@ -19,6 +19,7 @@ MonoBehaviour:
     com 48 Canais Pr\xE9-Definidos; - Display de Informa\xE7\xF5es em LCD, Alcance
     de recep\xE7\xE3o m\xE9dia de 50m"
   itemQuantity: 15
+  itemMeasureType: 0
   itemCost: 841.12
   isHospitalItem: 0
   isSchoolItem: 1

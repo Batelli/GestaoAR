@@ -19,6 +19,7 @@ MonoBehaviour:
     6000 CONTAGENS, ILUMINA\xC7\xC3O, TIPO DIGITAL, TEMPERATURA 10 A 50\xB0C OBSERVA\xC7\xD5ES
     COMPLEMENTARES"
   itemQuantity: 3
+  itemMeasureType: 0
   itemCost: 1350
   isHospitalItem: 1
   isSchoolItem: 0

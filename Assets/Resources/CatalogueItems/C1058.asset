@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: CARTOLINA, MATERIAL CELULOSE VEGETAL, GRAMATURA 150 G/M2, COMPRIMENTO
     660 MM, LARGURA 500 MM, COR AZUL
   itemQuantity: 300
+  itemMeasureType: 0
   itemCost: 0.55
   isHospitalItem: 1
   isSchoolItem: 1

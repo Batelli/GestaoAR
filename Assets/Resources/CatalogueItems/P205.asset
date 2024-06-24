@@ -19,6 +19,7 @@ MonoBehaviour:
     TIPO EL\xC9TRICO DE COLUNA, CAPACIDADE 20 L, VOLTAGEM 110 V, CARACTER\xCDSTICAS
     ADICIONAIS G\xC1S ECOL\xD3GICO/2 TORNEIRAS(\xC1GUA NATURAL/GELADA)SE R"
   itemQuantity: 185
+  itemMeasureType: 0
   itemCost: 610
   isHospitalItem: 1
   isSchoolItem: 1

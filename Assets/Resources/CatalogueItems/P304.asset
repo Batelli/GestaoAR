@@ -24,6 +24,7 @@ MonoBehaviour:
     150m\xB3; capacidade de condensa\xE7\xE3o(24h) de, no m\xEDnimo, 10 litros de
     \xE1gua; tens\xE3o/voltagem: 127V/60Hz"
   itemQuantity: 3
+  itemMeasureType: 0
   itemCost: 7244
   isHospitalItem: 0
   isSchoolItem: 0

@@ -19,6 +19,7 @@ MonoBehaviour:
     Frost Free; controle de temperatura que pode ser regulado; Compartimento Extra
     frio; M\xEDnimo 2 prateleiras; Voltagem: 110V"
   itemQuantity: 15
+  itemMeasureType: 0
   itemCost: 1387.49
   isHospitalItem: 1
   isSchoolItem: 1

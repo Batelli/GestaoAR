@@ -18,7 +18,8 @@ MonoBehaviour:
   itemDescription: "MICROCOMPUTADOR: com no m\xEDnimo as seguintes caracter\xEDsticas:
     Processador com 3,0 GHZ; Mem\xF3ria Ram 8GB; Placa de v\xEDdeo 4GB, 128 bits;
     Disco R\xEDgido de 1TB de armazenamento"
-  itemQuantity: 20
+  itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 5877.09
   isHospitalItem: 1
   isSchoolItem: 1

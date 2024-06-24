@@ -17,7 +17,8 @@ MonoBehaviour:
   itemName: "Obra de Arte \xF3leo sobre tela 86,5 cm x 61,6 cm"
   itemDescription: O porta-estandarte, 1946 de Robert Gwthamey doado por Nelson Rockefeller
   itemQuantity: 1
-  itemCost: 300000
+  itemMeasureType: 0
+  itemCost: 100000
   isHospitalItem: 0
   isSchoolItem: 0
   isMuseumItem: 1

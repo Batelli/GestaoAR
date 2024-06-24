@@ -19,6 +19,7 @@ MonoBehaviour:
     DEGRAUS 2, REVESTIMENTO DEGRAUS TAPETE ANTIDERRAPANTE, TIPO DEGRAUS FIXO, COR
     BRANCA"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 140
   isHospitalItem: 1
   isSchoolItem: 0

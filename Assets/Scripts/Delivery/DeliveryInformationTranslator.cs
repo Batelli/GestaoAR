@@ -6,17 +6,18 @@ using UnityEngine;
 public enum BuildingType { Hospital, Museum, School, CityHall, None }
 public enum ErrorType { None, Quantity, ItemName, UnitCost, TotalCost, DamagedBox, Description, MeasureType, DeliveryDate }
 public enum ItemCaseType { Consumption1, Permanent1, Permanent2, Permanent3, PermanentAll, All }
-public enum MeasureType { 
-                            Unidade, 
-                            Pacote_100g, Pacote_500g, Pacote_1KG,
-                            Pacote_12_Unidades, Pacote_50_Unidades, Pacote_72_Unidades, Pacote_100_Unidades,
-                            Pacote_200_Unidades, Pacote_250_Unidades, Pacote_500_Unidades,                            
-                            Caixa_12_Folhas,
-                            Garrafao_20L,
-                            Frasco_18mL, Frasco_250mL, Frasco_500mL, Frasco_1L,
-                            Rolo_450cm, Rolo_10m, Rolo_25m, Rolo_50m, Rolo_250g,
-                            Bloco_100_folhas, Bloco_200_folhas,
-                            Tubo_6_Unidades, Tubo_12_Unidades
+public enum MeasureType
+{
+    Unidade,
+    Pacote_100g, Pacote_500g, Pacote_1KG,
+    Pacote_12_Unidades, Pacote_50_Unidades, Pacote_72_Unidades, Pacote_100_Unidades,
+    Pacote_200_Unidades, Pacote_250_Unidades, Pacote_500_Unidades,
+    Caixa_12_Folhas,
+    Garrafao_20L,
+    Frasco_18mL, Frasco_250mL, Frasco_500mL, Frasco_1L,
+    Rolo_450cm, Rolo_10m, Rolo_25m, Rolo_50m, Rolo_250g,
+    Bloco_100_folhas, Bloco_200_folhas,
+    Tubo_6_Unidades, Tubo_12_Unidades
 }
 
 
@@ -24,7 +25,6 @@ public enum MeasureType {
 public class DeliveryInformationTranslator : MonoBehaviour
 {
     public static DeliveryInformationTranslator Instance { get; private set; }
-    
     public CatalogueItem[] itemCatalogue;
 
     /*      O código dos itens é composto por 5 dígitos alfanuméricos (1-9, A-Z)
@@ -43,6 +43,11 @@ public class DeliveryInformationTranslator : MonoBehaviour
             Destroy(this);
         else
             Instance = this;
+    }
+
+    private void Start()
+    {
+        itemCatalogue = Resources.LoadAll<CatalogueItem>("CatalogueItems");
     }
     #endregion Unity
 
@@ -72,13 +77,14 @@ public class DeliveryInformationTranslator : MonoBehaviour
     public bool IsTheCodeValid(string keyCode)
     {
         int index = GetItemIndex(keyCode);
-        if (index < 0  ||  index >= itemCatalogue.Length)
+        if (index < 0 || index >= itemCatalogue.Length)
             return false;
 
         return true;
     }
 
-    string GetBuildingCode(BuildingType building) {
+    string GetBuildingCode(BuildingType building)
+    {
         string[] strList;
 
         switch (building)
@@ -177,7 +183,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
     {
         int index = 0; //Sem erro
         int rand = Random.Range(0, 100);
-        
+
         if (rand < errorChance)
             index = Random.Range(1, System.Enum.GetValues(typeof(ErrorType)).Length); //Tipo de Erro
 
@@ -191,7 +197,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         switch (errorType)
         {
             case 0: //Sem erro
-                strList = new string[4] { "K", "U", "5", "F" }; 
+                strList = new string[4] { "K", "U", "5", "F" };
                 return strList[Random.Range(0, strList.Length)];
 
             case 1: //Erro de Quantidade
@@ -211,9 +217,9 @@ public class DeliveryInformationTranslator : MonoBehaviour
                 return strList[Random.Range(0, strList.Length)];
 
             case 5: //Caixa Danificada
-                strList = new string[3] { "A", "C", "8",   };
+                strList = new string[3] { "A", "C", "8", };
                 return strList[Random.Range(0, strList.Length)];
-            
+
             case 6: //Descricao
                 strList = new string[4] { "1", "S", "2", "T" };
                 return strList[Random.Range(0, strList.Length)];
@@ -295,7 +301,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "U":
             case "Y":
             case "3":
-                return "HOSPITAL MARIA ODÍLIA TEIXEIRA";
+                return "Hospital";
             case "B":
             case "F":
             case "J":
@@ -304,7 +310,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "V":
             case "Z":
             case "4":
-                return "MUSEU DA REPÚBLICA";
+                return "Museu";
             case "C":
             case "G":
             case "K":
@@ -313,7 +319,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "W":
             case "1":
             case "5":
-                return "INSTITUTO FEDERAL DE BRASÍLIA";
+                return "Escola";
             case "D":
             case "H":
             case "L":
@@ -322,7 +328,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "X":
             case "2":
             case "6":
-                return "PALÁCIO DO BURITI";
+                return "Prefeitura";
         }
 
         return "";
@@ -330,7 +336,8 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
     public int GetItemIndex(string keyCode)
     {
-        return GetDecodedIndex(keyCode.Substring(3, 1)) + (GetDecodedIndex(keyCode.Substring(2, 1)) * 10) + (GetDecodedIndex(keyCode.Substring(1, 1)) * 100);
+        int index = GetDecodedIndex(keyCode.Substring(3, 1)) + (GetDecodedIndex(keyCode.Substring(2, 1)) * 10) + (GetDecodedIndex(keyCode.Substring(1, 1)) * 100);
+        return index;
     }
 
     int GetDecodedIndex(string str)
@@ -389,7 +396,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
     public ErrorType GetErrorType(string keyCode)
     {
-        switch (keyCode.Substring(4, 1)) 
+        switch (keyCode.Substring(4, 1))
         {
             case "B":
             case "V":
@@ -443,7 +450,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         }
     }
 
-    public string GetObjectName (string keyCode)
+    public string GetObjectName(string keyCode)
     {
         ErrorType error = GetErrorType(keyCode);
         int index = GetItemIndex(keyCode);
@@ -486,7 +493,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         return itemCatalogue[index].itemName;
     }
 
-    public string GetObjectDescription (string keyCode)
+    public string GetObjectDescription(string keyCode)
     {
         ErrorType error = GetErrorType(keyCode);
         int index = GetItemIndex(keyCode);
@@ -529,7 +536,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         return itemCatalogue[index].itemDescription;
     }
 
-    public string GetUnitQtt (string keyCode)
+    public string GetUnitQtt(string keyCode)
     {
         ErrorType error = GetErrorType(keyCode);
         int index = GetItemIndex(keyCode);
@@ -570,7 +577,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         return qtt.ToString();
     }
 
-    public string GetUnitCost (string keyCode)
+    public string GetUnitCost(string keyCode)
     {
         ErrorType error = GetErrorType(keyCode);
         int index = GetItemIndex(keyCode);
@@ -611,7 +618,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         return cost.ToString("0.00");
     }
 
-    public string GetTotalCost (string keyCode)
+    public string GetTotalCost(string keyCode)
     {
         ErrorType error = GetErrorType(keyCode);
         int index = GetItemIndex(keyCode);
@@ -660,7 +667,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
         int maxQtt = System.Enum.GetValues(typeof(MeasureType)).Length;
         MeasureType measureType;
-        
+
         do
         {
             measureType = (MeasureType)Random.Range(0, maxQtt);
@@ -668,6 +675,11 @@ public class DeliveryInformationTranslator : MonoBehaviour
         while (measureType == measure);
 
         return GetMeasureTypeText(measureType);
+    }
+
+    public string GetMeasureTypeNoError(string keyCode)
+    {
+        return GetMeasureTypeText(itemCatalogue[GetItemIndex(keyCode)].itemMeasureType);
     }
 
     string GetMeasureTypeText(MeasureType measureType)
@@ -679,10 +691,10 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
             case MeasureType.Pacote_100g:
                 return "Pacote de 100g";
-            
+
             case MeasureType.Pacote_500g:
                 return "Pacote de 500g";
-            
+
             case MeasureType.Pacote_1KG:
                 return "Pacote de 1KG";
 
@@ -768,6 +780,13 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
 
         dateTime = dateTime.AddDays(Random.Range(25, 45)); //entrega acima de 30 dias
+        return dateTime.ToString("dd/MM/yyyy");
+    }
+
+    public string GetDeliveryDateNoError()
+    {
+        System.DateTime dateTime = System.DateTime.Now;
+        dateTime = dateTime.AddDays(Random.Range(5, 15)); //entrega de 5 a 15 dias
         return dateTime.ToString("dd/MM/yyyy");
     }
 

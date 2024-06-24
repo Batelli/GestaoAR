@@ -17,7 +17,8 @@ MonoBehaviour:
   itemName: Obra de Arte aquarela sobre papel 55,4 cm x 76,4 cm
   itemDescription: A aula,  1946 de Jacob Lawrence doado por Nelson Rockefeller
   itemQuantity: 1
-  itemCost: 200000
+  itemMeasureType: 0
+  itemCost: 75000
   isHospitalItem: 0
   isSchoolItem: 0
   isMuseumItem: 1

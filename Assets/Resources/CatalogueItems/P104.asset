@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: ESCRIVANINHA
   itemDescription: MESA, TIPO ESCRIVANINHA, MEDINDO 0,80 X 0,75 X 0,50.
   itemQuantity: 72
+  itemMeasureType: 0
   itemCost: 219
   isHospitalItem: 0
   isSchoolItem: 1

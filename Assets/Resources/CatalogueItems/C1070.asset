@@ -17,6 +17,7 @@ MonoBehaviour:
   itemName: "CALCULADORA ELETR\xD4NICA"
   itemDescription: "CALCULADORA ELETR\xD4NICA, NOME CALCULADORA ELETR\xD4NICA"
   itemQuantity: 50
+  itemMeasureType: 0
   itemCost: 34.82
   isHospitalItem: 1
   isSchoolItem: 1

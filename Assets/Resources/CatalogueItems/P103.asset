@@ -18,6 +18,7 @@ MonoBehaviour:
   itemDescription: "2,00000 Unidade POLTRONA Poltrona, poltrona escrit\xF3rio MARCA:
     FLEXFORM ITEM DO PROCESSO: 00022 ITEM DE MATERIAL: 000150664"
   itemQuantity: 2
+  itemMeasureType: 0
   itemCost: 1591.22
   isHospitalItem: 1
   isSchoolItem: 1

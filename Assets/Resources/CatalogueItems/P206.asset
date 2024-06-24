@@ -19,6 +19,7 @@ MonoBehaviour:
     1000 RPM a 1450 RPM; 110v; 0.2Kw/H; oscilante; controle velocidade; regulagem
     altura: m\xEDnimo de 50cm"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 2898.1
   isHospitalItem: 1
   isSchoolItem: 1

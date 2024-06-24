@@ -22,6 +22,7 @@ MonoBehaviour:
     COMPONENTES ADICIONAIS TECLA C/ MENSAGEM DE TEXTO, CARACTER\xCDSTICAS ADICIONAIS
     COMANDO DE VOZ, TIPO M\xD3DULO PORT\xC1TIL, C/ AL\xC7A TRANSPORTE, MALETA"
   itemQuantity: 10
+  itemMeasureType: 0
   itemCost: 6100
   isHospitalItem: 1
   isSchoolItem: 0
