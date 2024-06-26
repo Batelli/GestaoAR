@@ -20,7 +20,9 @@ public class DeliveryBox : MonoBehaviour
     public TMP_Text deliveryDate;
     public TMP_Text shoppingDate;
     public TMP_Text measureType;
+    public TMP_Text expirationDateText;
     public GameObject[] nfBuildingIcon;
+    public GameObject expirationDate;
 
     public TMP_Text boxNFNumber;
     public TMP_Text boxObjectName;
@@ -48,6 +50,8 @@ public class DeliveryBox : MonoBehaviour
         deliveryDate.text = DeliveryInformationTranslator.Instance.GetDeliveryDate(codeToTranslate);
         shoppingDate.text = DeliveryInformationTranslator.Instance.GetCurrentDate();
         measureType.text = DeliveryInformationTranslator.Instance.GetMeasureType(codeToTranslate);
+        expirationDate.SetActive(DeliveryInformationTranslator.Instance.GetExpirationDate(codeToTranslate));
+        expirationDateText.text = DeliveryInformationTranslator.Instance.GetProductionDate(codeToTranslate);
 
         boxNFNumber.text = codeToTranslate.ToUpper();
         boxObjectName.text = DeliveryInformationTranslator.Instance.GetObjectName(codeToTranslate).ToUpper();
