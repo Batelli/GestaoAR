@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public enum BuildingType { Hospital, Museum, School, CityHall, None }
-public enum ErrorType { None, Quantity, ItemName, UnitCost, TotalCost, DamagedBox, Description, MeasureType, DeliveryDate }
+public enum ErrorType { None, Quantity, ItemName, UnitCost, TotalCost, DamagedBox, Description, MeasureType, DeliveryDate, ExpirationDate }
 public enum ItemCaseType { Consumption1, Permanent1, Permanent2, Permanent3, PermanentAll, All }
 public enum MeasureType
 {
@@ -192,48 +194,52 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
     string GetErrorChar(int errorType)
     {
-        string[] strList;
+        string[] strList = new string[1] { "" };
 
         switch (errorType)
         {
             case 0: //Sem erro
                 strList = new string[4] { "K", "U", "5", "F" };
-                return strList[Random.Range(0, strList.Length)];
+                break;
 
             case 1: //Erro de Quantidade
                 strList = new string[4] { "B", "V", "6", "P" };
-                return strList[Random.Range(0, strList.Length)];
+                break;
 
             case 2: //Erro de Valor Total
                 strList = new string[4] { "M", "W", "7", "Z" };
-                return strList[Random.Range(0, strList.Length)];
+                break;
 
             case 3: //Erro de Item errado
                 strList = new string[4] { "D", "N", "X", "G" };
-                return strList[Random.Range(0, strList.Length)];
+                break;
 
             case 4: //Erro de Custo Unitário
                 strList = new string[4] { "E", "O", "Y", "9" };
-                return strList[Random.Range(0, strList.Length)];
+                break;
 
             case 5: //Caixa Danificada
                 strList = new string[3] { "A", "C", "8", };
-                return strList[Random.Range(0, strList.Length)];
+                break;
 
             case 6: //Descricao
-                strList = new string[4] { "1", "S", "2", "T" };
-                return strList[Random.Range(0, strList.Length)];
+                strList = new string[3] { "1", "S", "2" };
+                break;
 
             case 7: //Unidade de Medida
-                strList = new string[4] { "H", "3", "L", "I" };
-                return strList[Random.Range(0, strList.Length)];
+                strList = new string[3] { "H", "3", "L" };
+                break;
 
             case 8: //Data de Entrega
-                strList = new string[4] { "R", "J", "Q", "4" };
-                return strList[Random.Range(0, strList.Length)];
+                strList = new string[3] { "R", "J", "Q" };
+                break;
+
+            case 9: //Data de Validade
+                strList = new string[3] { "T", "I", "4" };
+                break;
         }
 
-        return "";
+        return strList[Random.Range(0, strList.Length)];
 
     }
     #endregion Encode
@@ -394,6 +400,12 @@ public class DeliveryInformationTranslator : MonoBehaviour
         return 0;
     }
 
+    ItemCaseType GetItemCaseType(string keyCode)
+    {
+        int index = GetItemIndex(keyCode);
+        return itemCatalogue[index].itemCaseType;
+    }
+
     public ErrorType GetErrorType(string keyCode)
     {
         switch (keyCode.Substring(4, 1))
@@ -430,20 +442,22 @@ public class DeliveryInformationTranslator : MonoBehaviour
             case "1":
             case "S":
             case "2":
-            case "T":
                 return ErrorType.Description;
 
             case "H":
             case "3":
             case "L":
-            case "I":
                 return ErrorType.MeasureType;
 
             case "R":
             case "J":
             case "Q":
-            case "4":
                 return ErrorType.DeliveryDate;
+
+            case "T":
+            case "I":
+            case "4":
+                return ErrorType.ExpirationDate;
 
             default:
                 return ErrorType.None;
@@ -773,7 +787,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
     {
         ErrorType error = GetErrorType(keyCode);
         System.DateTime dateTime = System.DateTime.Now;
-        dateTime = dateTime.AddDays(Random.Range(5, 15)); //entrega de 5 a 15 dias
+        dateTime = dateTime.AddDays(Random.Range(10, 20)); //entrega de 10 a 20 dias
 
         if (error != ErrorType.DeliveryDate)
             return dateTime.ToString("dd/MM/yyyy");
@@ -800,6 +814,28 @@ public class DeliveryInformationTranslator : MonoBehaviour
         System.DateTime dateTime = System.DateTime.Now;
         dateTime = dateTime.AddDays(20);
         return dateTime.ToString("dd/MM/yyyy");
+    }
+
+    public string GetProductionDate(string keyCode)
+    {
+        ErrorType error = GetErrorType(keyCode);
+        System.DateTime dateTime = System.DateTime.Now;
+
+        if (error != ErrorType.ExpirationDate)
+            dateTime = dateTime.AddDays(-Random.Range(60, 450));
+        else
+            dateTime = dateTime.AddDays(Random.Range(800, 1500));
+
+        return dateTime.ToString("dd/MM/yyyy");
+    }
+
+    public bool GetExpirationDate (string keyCode)
+    {
+        ItemCaseType caseType = GetItemCaseType(keyCode);
+        if (caseType != ItemCaseType.Consumption1)
+            return false;
+        else
+            return true;
     }
     #endregion Decode
 }
