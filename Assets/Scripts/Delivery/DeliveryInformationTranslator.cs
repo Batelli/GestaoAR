@@ -68,7 +68,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
         //Index
         string temp = GetItemIndex(keyCode).ToString("000");
-        newCode += GetEncodedChar(temp.Substring(0, 1)) + GetEncodedChar(temp.Substring(1, 1) + GetEncodedChar(temp.Substring(2, 1)));
+        newCode += GetEncodedChar(temp.Substring(0, 1)) + GetEncodedChar(temp.Substring(1, 1)) + GetEncodedChar(temp.Substring(2, 1));
 
         //Erro
         newCode += GetErrorCode(0);
@@ -818,10 +818,9 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
     public string GetProductionDate(string keyCode)
     {
-        ErrorType error = GetErrorType(keyCode);
         System.DateTime dateTime = System.DateTime.Now;
 
-        if (error != ErrorType.ExpirationDate)
+        if (GetErrorType(keyCode) != ErrorType.ExpirationDate)
             dateTime = dateTime.AddDays(-Random.Range(60, 450));
         else
             dateTime = dateTime.AddDays(Random.Range(800, 1500));
@@ -831,11 +830,10 @@ public class DeliveryInformationTranslator : MonoBehaviour
 
     public bool GetExpirationDate (string keyCode)
     {
-        ItemCaseType caseType = GetItemCaseType(keyCode);
-        if (caseType != ItemCaseType.Consumption1)
-            return false;
-        else
+        if (GetItemCaseType(keyCode) == ItemCaseType.Consumption1)
             return true;
+        
+        return false;
     }
     #endregion Decode
 }
