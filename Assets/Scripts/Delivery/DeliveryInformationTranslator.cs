@@ -598,7 +598,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         float cost = itemCatalogue[index].itemCost;
 
         if (error != ErrorType.UnitCost)
-            return cost.ToString("0.00");
+            return "R$ " + cost.ToString("n2");
 
         string str = keyCode.Substring(4, 1);
         switch (str)
@@ -629,7 +629,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
                 break;
         }
 
-        return cost.ToString("0.00");
+        return "R$ " + cost.ToString("n2");
     }
 
     public string GetTotalCost(string keyCode)
@@ -639,7 +639,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         float totalCost = itemCatalogue[index].itemCost * (float)itemCatalogue[index].itemQuantity;
 
         if (error != ErrorType.TotalCost)
-            return totalCost.ToString("0.00");
+            return "R$ " + totalCost.ToString("n2");
 
         string str = keyCode.Substring(4, 1);
         switch (str)
@@ -661,7 +661,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
                 break;
         }
 
-        return totalCost.ToString("0.00");
+        return "R$ " + totalCost.ToString("n2");
     }
 
     public bool GetDamagedBox(string keyCode)
