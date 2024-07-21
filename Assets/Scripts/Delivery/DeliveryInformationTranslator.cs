@@ -823,7 +823,7 @@ public class DeliveryInformationTranslator : MonoBehaviour
         if (GetErrorType(keyCode) != ErrorType.ExpirationDate)
             dateTime = dateTime.AddDays(-Random.Range(60, 450));
         else
-            dateTime = dateTime.AddDays(Random.Range(800, 1500));
+            dateTime = dateTime.AddDays(-Random.Range(800, 1500));
 
         return dateTime.ToString("dd/MM/yyyy");
     }
