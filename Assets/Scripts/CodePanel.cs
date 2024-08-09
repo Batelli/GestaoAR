@@ -33,7 +33,12 @@ public class CodePanel : MonoBehaviour
 
     public void GetEnterInput()
     {
-        if (gameDeliveryCode.Length == 5 && DeliveryInformationTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
+        if (gameDeliveryCode.ToUpper() == "BOLA")
+        {
+            PingPongManager.Instance.CreateNewBalls();
+            FinalStep();
+        } 
+        else if (gameDeliveryCode.Length == 5 && DeliveryInformationTranslator.Instance.IsTheCodeValid(gameDeliveryCode))
         {
             GameManager.Instance.CreateNewBox(gameDeliveryCode);
             FinalStep();
